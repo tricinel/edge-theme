@@ -1,0 +1,42 @@
+{
+  "name": "edge-theme",
+  "version": "1.0.0",
+  "description": "Edge Theme for Sublime Text 3",
+  "main": "gulpfile.babel.js",
+  "author": "tricinel <bogdan@bogdanlazar.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "gulp",
+    "build:themes": "gulp build:themes",
+    "build:schemes": "gulp build:schemes"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-root-import": "^4.1.8",
+    "chalk": "^2.1.0",
+    "del": "^3.0.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.8.0",
+    "gulp-data": "^1.2.1",
+    "gulp-flatmap": "^1.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-include": "^2.3.1",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "prettier": "^1.7.4",
+    "run-sequence": "^2.2.0"
+  }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>{{ author }}</string>
+	<key>colorSpaceName</key>
+	<string>{{ colorSpaceName }}</string>
+	<key>semanticClass</key>
+	<string>{{ semanticClass }}</string>
+	<key>name</key>
+	<string>{{ name }}</string>
+	<key>uuid</key>
+	<string>{{ uuid }}</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				{% for key, string in ui.settings %}
+				<key>{{ key }}</key>
+				<string>{{ string }}</string>
+				{% endfor %}
+			</dict>
+		</dict>
+		{% for item in scheme %}
+		<dict>
+			<key>name</key>
+			<string>{{ item.name }}</string>
+			<key>scope</key>
+			<string>{{ item.scope }}</string>
+			{% if item.settings %}
+			<key>settings</key>
+			<dict>
+				{% for key, setting in item.settings %}
+				<key>{{ key }}</key>
+				<string>{{ setting }}</string>
+				{% endfor %}
+			</dict>
+			{% endif %}
+		</dict>
+		{% endfor %}
+	</array>
+</dict>
+</plist>
