@@ -8,7 +8,8 @@ const paths = {
   },
   dist: {
     root: './',
-    schemes: './schemes'
+    schemes: './schemes',
+    themes: './'
   },
   tmp: './.tmp'
 };

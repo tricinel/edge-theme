@@ -1,0 +1,52 @@
+
+/* BUTTONS
+ * Style for buttons and labels
+========================================================================= */
+{
+ "class": "label_control",
+ "parents": [{"class": "button_control"}],
+ "color": [{{ toRgb(ui.colors.buttons.primary) }}],
+ "font.bold": true
+},
+{
+ "class": "label_control",
+ "parents": [{"class": "button_control", "attributes": ["hover"]}],
+ "color": [{{ hover(ui.colors.buttons.primary) }}]
+},
+{
+  "class": "button_control",
+  "content_margin": [6, 12, 6, 12],
+  "min_size": [75, 0],
+  "layer0.tint": [33, 33, 33],
+  "layer0.opacity": 0.0,
+  "layer0.inner_margin": [6, 6],
+  "layer1.opacity": 0.0,
+  "layer1.inner_margin": [6, 6],
+  "layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
+  "layer2.inner_margin": [6, 6]
+},
+{
+  "class": "button_control",
+  "attributes": ["pressed"],
+  "layer0.opacity": 0,
+  "layer2.opacity": 1.0
+},
+{
+  "class": "button_control",
+  "attributes": ["pressed", "hover"],
+  "layer2.opacity": 0.0
+},
+{
+  "class": "button_control",
+  "attributes": ["hover"],
+  "layer2.opacity": 1.0
+},
+{
+  "class": "icon_button_control",
+  "layer0.tint": [33, 33, 33],
+  "layer0.inner_margin": [6, 6],
+  "layer0.opacity": 0.0,
+  "layer2.tint": [255, 255, 255],
+  "layer2.opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" },
+  "content_margin": [10, 6]
+},

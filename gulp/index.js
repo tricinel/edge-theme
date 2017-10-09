@@ -2,7 +2,7 @@
 import './build';
 import './clean';
 import './schemes';
-// import './themes';
+import './themes';
 // import './watch';
 
 // export default script

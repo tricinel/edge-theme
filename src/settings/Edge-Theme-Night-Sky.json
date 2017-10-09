@@ -1,0 +1,28 @@
+{
+  "name": "Edge-Theme-Night-Sky",
+  "uuid": "77a86a47-7247-4ade-938e-b19025a98c0d",
+  "semanticClass": "edge.theme.nightsky",
+  "ui": {
+    "id": "edge-theme",
+    "variant": {
+      "id": "night-sky",
+      "name": "Night Sky"
+    },
+    "settings": {
+      "background": "#081A20",
+      "caret": "#F3D3BD",
+      "foreground": "#A9BCD0",
+      "invisibles": "#172A3A",
+      "lineHighlight": "#172A3A",
+      "selection": "#172A3A"
+    },
+    "colors": {
+      "background": "#081A20",
+      "foreground": "#A9BCD0",
+      "titleBar": "#172A3A",
+      "buttons": {
+        "primary": "#172A3A"
+      }
+    }
+  }
+}

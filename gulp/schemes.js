@@ -1,3 +1,5 @@
+/* eslint-disable import/no-dynamic-require */
+
 import gulp from 'gulp';
 import chalk from 'chalk';
 import path from 'path';
@@ -27,13 +29,18 @@ gulp.task('process:schemes', () =>
   gulp.src(`${paths.src.schemes}/*.json`).pipe(
     flatmap((stream, file) => {
       const basename = path.basename(file.path, path.extname(file.path));
+      const filename = path.basename(file.path);
 
       return gulp
         .src(templates.scheme)
         .pipe(
           data(() => {
-            const specific = require(file.path);
-            return { ...common, ...specific };
+            /* eslint-disable global-require */
+            const settings = require(`.${paths.src.settings}/${filename}`);
+            const scheme = require(file.path);
+            /* eslint-enable */
+
+            return { ...common, ...settings, ...scheme };
           })
         )
         .pipe(nunjucksRender({ path: [paths.tmp], ext: '.tmTheme' }))
