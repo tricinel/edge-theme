@@ -7,12 +7,27 @@ import rename from 'gulp-rename';
 import data from 'gulp-data';
 import flatmap from 'gulp-flatmap';
 import nunjucksRender from 'gulp-nunjucks-render';
+import runSequence from 'run-sequence';
+import chalk from 'chalk';
 
 import { paths, templates } from './config';
 import { toRgb, hover } from './utils';
 import common from '../src/settings/common.json';
 
-gulp.task('build:themes', ['clean:themes'], () =>
+gulp.task('build:themes', cb => {
+  runSequence('process:themes', error => {
+    if (error) {
+      console.log(
+        chalk.red(`There was an issue building the themes:\n${error.message}`)
+      );
+    } else {
+      console.log(chalk.green('Themes built successfully!'));
+    }
+    cb(error);
+  });
+});
+
+gulp.task('process:themes', ['clean:themes'], () =>
   gulp.src(`${paths.src.themes}/*.json`).pipe(
     flatmap((stream, file) => {
       const basename = path.basename(file.path, path.extname(file.path));
