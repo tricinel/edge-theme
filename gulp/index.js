@@ -3,6 +3,7 @@ import './build';
 import './clean';
 import './schemes';
 import './themes';
+import './bump';
 // import './watch';
 
 // export default script
