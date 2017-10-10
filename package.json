@@ -10,7 +10,8 @@
     "build": "gulp",
     "build:themes": "gulp build:themes",
     "build:schemes": "gulp build:schemes",
-    "bump": "gulp bump"
+    "bump": "gulp bump",
+    "watch": "gulp watch"
   },
   "devDependencies": {
     "babel": "^6.23.0",
