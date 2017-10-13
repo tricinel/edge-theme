@@ -16,7 +16,7 @@
 {
   "class": "grid_layout_control",
   "border_size": 1,
-  "border_color": [27, 27, 27]
+  "border_color": [{{ toRgb(ui.colors.borderColor) }}]
 },
 
 // TITLE BAR

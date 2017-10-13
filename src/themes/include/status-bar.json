@@ -1,0 +1,22 @@
+/* Status bar
+ ========================================================================= */
+// Status bar container
+{
+  "class": "status_bar",
+  "layer0.tint": [{{ toRgb(ui.colors.highlight) }}],
+  "layer0.opacity": 1.0,
+  "layer0.inner_margin": [2, 2],
+  "content_margin": [8, 8, 8, 8]
+},
+// Status bar button
+{
+  "class": "status_button",
+  "min_size": [100, 0]
+},
+// Status bar label
+{
+  "class": "label_control",
+  "parents": [{"class": "status_bar"}],
+  "color": [{{ toRgb(ui.colors.textColor) }}],
+  "font.face": "{{ fonts.fontFace }}"
+},

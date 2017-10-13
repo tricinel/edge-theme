@@ -1,0 +1,50 @@
+/* Panel
+ ========================================================================= */
+// Bottom Panel
+{
+  "class": "panel_control",
+  "layer0.inner_margin": [0,0],
+  "layer0.opacity": 1,
+  "layer0.tint": [{{ toRgb(ui.colors.highlight) }}],
+  "content_margin": 0
+},
+// Mini Quick Panel
+{
+  "class": "mini_quick_panel_row",
+  "layer0.tint": [{{ toRgb(ui.colors.highlight) }}],
+  "layer0.opacity": 1
+},
+{
+  "class": "mini_quick_panel_row",
+  "attributes": ["selected"],
+  "layer0.tint": [{{ toRgb(ui.colors.textHighlightColor) }}],
+},
+// Code Completion Dropdown
+{
+  "class": "popup_control",
+  "content_margin": [2, 2],
+  "layer0.tint": [{{ toRgb(ui.colors.highlight) }}],
+  "layer0.opacity": 1.0
+},
+{
+  "class": "auto_complete",
+  "row_padding": [4, 2]
+},
+{
+  "class": "auto_complete_label",
+  "fg": [{{ toRgb(ui.colors.foreground) }}],
+  "match_fg": [{{ toRgb(ui.colors.textHighlightColor) }}],
+  "selected_fg": [{{ toRgb(ui.colors.highlight) }}],
+  "selected_match_fg": [{{ darken(ui.settings.highlight) }}]
+},
+{
+  "class": "table_row",
+  "layer0.tint": [{{ toRgb(ui.colors.foreground) }}],
+  "layer0.opacity": 0.0,
+  "layer0.inner_margin": [3, 1]
+},
+{
+  "class": "table_row",
+  "attributes": ["selected"],
+  "layer0.opacity": 1.0
+},

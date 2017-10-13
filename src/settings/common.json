@@ -1,5 +1,8 @@
 {
   "author": "Bogdan Lazar",
   "comment": "Superb theme for Sublime Text 3",
-  "colorSpaceName": "sRGB"
+  "colorSpaceName": "sRGB",
+  "fonts": {
+    "fontFace": "Hack"
+  }
 }

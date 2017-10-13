@@ -6,4 +6,13 @@
 [
   //=include "app.json"
   //=include "buttons.json"
+  //=include "dialogs.json"
+  //=include "label.json"
+  //=include "minimap.json"
+  //=include "panels.json"
+  //=include "quick-panel.json"
+  //=include "sidebar.json"
+  //=include "status-bar.json"
+  //=include "tabs.json"
+  //=include "tooltips.json"
 ]

@@ -11,7 +11,7 @@ import runSequence from 'run-sequence';
 import chalk from 'chalk';
 
 import { paths, templates } from './config';
-import { toRgb, hover } from './utils';
+import { toRgb, hover, darken, lighten } from './utils';
 import common from '../src/settings/common.json';
 
 gulp.task('build:themes', cb => {
@@ -47,7 +47,7 @@ gulp.task('process:themes', ['clean:themes'], () =>
             const theme = require(file.path);
             /* eslint-enable */
 
-            return { ...common, ...settings, ...theme, toRgb, hover };
+            return { ...common, ...settings, ...theme, toRgb, hover, darken, lighten };
           })
         )
         .pipe(nunjucksRender({ path: [paths.tmp], ext: '.sublime-theme' }))

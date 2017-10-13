@@ -1,0 +1,52 @@
+/* Status bar
+ * The quick panel is used for the various Goto functionality, the command palette and is available for use by plugins.
+ ========================================================================= */
+
+// Quick panel background
+{
+  "class": "overlay_control",
+  "layer0.tint": [{{ darken(ui.colors.higlight, 30) }}],
+  "layer0.opacity": 0.50,
+  "content_margin": [10, 10, 10, 10]
+},
+{
+  "class": "quick_panel",
+  "row_padding": [20, 10],
+  "layer0.tint": [{{ toRgb(ui.colors.highlight) }}],
+  "layer0.opacity": 1.0
+},
+{
+  "class": "quick_panel_row",
+  "layer0.tint": [{{ toRgb(ui.colors.highlight) }}],
+  "layer0.inner_margin": [5, 5, 5, 5],
+  "layer0.opacity": 1.0
+},
+{
+  "class": "quick_panel_row",
+  "attributes": ["selected"],
+  "layer0.tint": [{{ toRgb(ui.colors.foreground) }}],
+},
+{
+  "class": "quick_panel_label",
+  "fg": [{{ toRgb(ui.colors.foreground) }}],
+  "match_fg": [{{ toRgb(ui.colors.textHighlightColor) }}],
+  "selected_fg": [{{ toRgb(ui.colors.highlight) }}],
+  "selected_match_fg": [{{ darken(ui.settings.highlight) }}]
+},
+{
+  "class": "quick_panel_path_label",
+  "fg": [{{ toRgb(ui.colors.textHighlightColor) }}],
+  "match_fg": [{{ toRgb(ui.colors.foreground) }}],
+  "selected_fg": [{{ toRgb(ui.colors.highlight) }}],
+  "selected_match_fg": [{{ darken(ui.settings.highlight) }}]
+},
+{
+  "class": "text_line_control",
+  "parents": [{"class": "overlay_control"}],
+  "layer0.tint": [{{ toRgb(ui.colors.background) }}]
+},
+// {
+//   "class": "quick_panel_score_label",
+//   "fg": [126, 199, 239, 255],
+//   "selected_fg": [166, 229, 255, 255]
+// },

@@ -1,26 +1,26 @@
-
 /* BUTTONS
  * Style for buttons and labels
 ========================================================================= */
 {
  "class": "label_control",
  "parents": [{"class": "button_control"}],
- "color": [{{ toRgb(ui.colors.buttons.primary) }}],
- "font.bold": true
+ "color": [{{ toRgb(ui.colors.textColor) }}],
+ "font.face": "{{ fonts.fontFace }}"
 },
 {
  "class": "label_control",
  "parents": [{"class": "button_control", "attributes": ["hover"]}],
- "color": [{{ hover(ui.colors.buttons.primary) }}]
+ "color": [{{ hover(ui.colors.highlight) }}]
 },
 {
   "class": "button_control",
-  "content_margin": [6, 12, 6, 12],
-  "min_size": [75, 0],
-  "layer0.tint": [33, 33, 33],
+  "content_margin": [3, 12, 3, 12],
+  "min_size": [80, 0],
+  "layer1.tint": [{{ toRgb(ui.colors.background) }}],
+  "layer2.tint": [{{ lighten(ui.colors.highlight) }}],
   "layer0.opacity": 0.0,
-  "layer0.inner_margin": [6, 6],
-  "layer1.opacity": 0.0,
+  "layer0.inner_margin": [3, 3],
+  "layer1.opacity": 1.0,
   "layer1.inner_margin": [6, 6],
   "layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
   "layer2.inner_margin": [6, 6]

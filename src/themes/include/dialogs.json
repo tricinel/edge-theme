@@ -1,0 +1,8 @@
+/* Dialogs
+ * The Indexer Status and Update windows both use this class for the window background
+ ========================================================================= */
+{
+  "class": "dialog",
+  "layer0.tint": [{{ toRgb(ui.colors.foreground) }}],
+  "layer0.opacity": 1.0
+},

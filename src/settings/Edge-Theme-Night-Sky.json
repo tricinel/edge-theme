@@ -19,10 +19,10 @@
     "colors": {
       "background": "#081A20",
       "foreground": "#A9BCD0",
-      "titleBar": "#172A3A",
-      "buttons": {
-        "primary": "#172A3A"
-      }
+      "highlight": "#172A3A",
+      "textColor": "#BBBFC8",
+      "borderColor": "#414856",
+      "textHighlightColor": "#F3D3BD"
     }
   }
 }

@@ -1,0 +1,16 @@
+/* Tooltips
+ * Tool tips shown when hovering over tabs and buttons
+========================================================================= */
+// Tooltip container
+{
+  "class": "tool_tip_control",
+  "layer0.tint": [{{ toRgb(ui.colors.foreground) }}],
+  "layer0.inner_margin": [1, 1],
+  "layer0.opacity": 0.95,
+  "content_margin": [3, 3]
+},
+// Tooltip content
+{
+  "class": "tool_tip_label_control",
+  "color": [{{ toRgb(ui.colors.background) }}]
+},

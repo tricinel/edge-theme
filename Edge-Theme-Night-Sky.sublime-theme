@@ -22,7 +22,7 @@
   {
     "class": "grid_layout_control",
     "border_size": 1,
-    "border_color": [27, 27, 27]
+    "border_color": [65,72,86]
   },
   
   // TITLE BAR
@@ -35,15 +35,14 @@
     "bg": [8,26,32]
   },
   
-  
   /* BUTTONS
    * Style for buttons and labels
   ========================================================================= */
   {
    "class": "label_control",
    "parents": [{"class": "button_control"}],
-   "color": [23,42,58],
-   "font.bold": true
+   "color": [187,191,200],
+   "font.face": "Hack"
   },
   {
    "class": "label_control",
@@ -52,12 +51,13 @@
   },
   {
     "class": "button_control",
-    "content_margin": [6, 12, 6, 12],
-    "min_size": [75, 0],
-    "layer0.tint": [33, 33, 33],
+    "content_margin": [3, 12, 3, 12],
+    "min_size": [80, 0],
+    "layer1.tint": [8,26,32],
+    "layer2.tint": [52,95,131],
     "layer0.opacity": 0.0,
-    "layer0.inner_margin": [6, 6],
-    "layer1.opacity": 0.0,
+    "layer0.inner_margin": [3, 3],
+    "layer1.opacity": 1.0,
     "layer1.inner_margin": [6, 6],
     "layer2.opacity": { "target": 0.0, "speed": 2.0, "interpolation": "smoothstep" },
     "layer2.inner_margin": [6, 6]
@@ -86,6 +86,389 @@
     "layer2.tint": [255, 255, 255],
     "layer2.opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" },
     "content_margin": [10, 6]
+  },
+  
+  /* Dialogs
+   * The Indexer Status and Update windows both use this class for the window background
+   ========================================================================= */
+  {
+    "class": "dialog",
+    "layer0.tint": [169,188,208],
+    "layer0.opacity": 1.0
+  },
+  
+  
+  /* Labels
+  ========================================================================= */
+  // Text input field item
+  {
+    "class": "text_line_control",
+    "layer0.tint": [8,26,32],
+    "layer0.opacity": 1.0,
+    "content_margin": [12, 12, 3, 12],
+  },
+  
+  /* Mini map
+   ========================================================================= */
+  {
+    "class": "minimap_control",
+    "settings": ["always_show_minimap_viewport"],
+    "viewport_color": [255, 255, 255, 35],
+    "viewport_opacity": 1.0
+  },
+  {
+    "class": "minimap_control",
+    "settings": ["!always_show_minimap_viewport"],
+    "viewport_color": [0, 0, 0, 35],
+    "viewport_opacity": {
+      "target": 0.0,
+      "speed": 10.0,
+      "interpolation": "smoothstep"
+    }
+  },
+  {
+    "class": "minimap_control",
+    "attributes": ["hover"],
+    "settings": ["!always_show_minimap_viewport"],
+    "viewport_opacity": 1.0
+  },
+  
+  /* Panel
+   ========================================================================= */
+  // Bottom Panel
+  {
+    "class": "panel_control",
+    "layer0.inner_margin": [0,0],
+    "layer0.opacity": 1,
+    "layer0.tint": [23,42,58],
+    "content_margin": 0
+  },
+  // Mini Quick Panel
+  {
+    "class": "mini_quick_panel_row",
+    "layer0.tint": [23,42,58],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "mini_quick_panel_row",
+    "attributes": ["selected"],
+    "layer0.tint": [243,211,189],
+  },
+  // Code Completion Dropdown
+  {
+    "class": "popup_control",
+    "content_margin": [2, 2],
+    "layer0.tint": [23,42,58],
+    "layer0.opacity": 1.0
+  },
+  {
+    "class": "auto_complete",
+    "row_padding": [4, 2]
+  },
+  {
+    "class": "auto_complete_label",
+    "fg": [169,188,208],
+    "match_fg": [243,211,189],
+    "selected_fg": [23,42,58],
+    "selected_match_fg": [0,0,0]
+  },
+  {
+    "class": "table_row",
+    "layer0.tint": [169,188,208],
+    "layer0.opacity": 0.0,
+    "layer0.inner_margin": [3, 1]
+  },
+  {
+    "class": "table_row",
+    "attributes": ["selected"],
+    "layer0.opacity": 1.0
+  },
+  
+  /* Status bar
+   * The quick panel is used for the various Goto functionality, the command palette and is available for use by plugins.
+   ========================================================================= */
+  
+  // Quick panel background
+  {
+    "class": "overlay_control",
+    "layer0.tint": [0,0,0],
+    "layer0.opacity": 0.50,
+    "content_margin": [10, 10, 10, 10]
+  },
+  {
+    "class": "quick_panel",
+    "row_padding": [20, 10],
+    "layer0.tint": [23,42,58],
+    "layer0.opacity": 1.0
+  },
+  {
+    "class": "quick_panel_row",
+    "layer0.tint": [23,42,58],
+    "layer0.inner_margin": [5, 5, 5, 5],
+    "layer0.opacity": 1.0
+  },
+  {
+    "class": "quick_panel_row",
+    "attributes": ["selected"],
+    "layer0.tint": [169,188,208],
+  },
+  {
+    "class": "quick_panel_label",
+    "fg": [169,188,208],
+    "match_fg": [243,211,189],
+    "selected_fg": [23,42,58],
+    "selected_match_fg": [0,0,0]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "fg": [243,211,189],
+    "match_fg": [169,188,208],
+    "selected_fg": [23,42,58],
+    "selected_match_fg": [0,0,0]
+  },
+  {
+    "class": "text_line_control",
+    "parents": [{"class": "overlay_control"}],
+    "layer0.tint": [8,26,32]
+  },
+  // {
+  //   "class": "quick_panel_score_label",
+  //   "fg": [126, 199, 239, 255],
+  //   "selected_fg": [166, 229, 255, 255]
+  // },
+  
+  /* SIDEBAR
+   * Sidebar panel settings and behavioring
+   ========================================================================= */
+  
+  // Sidebar container
+  {
+    "class": "sidebar_container",
+    // "layer0.texture": "",
+    "layer0.opacity": 1,
+    "layer0.tint": [8,26,32],
+    "layer0.inner_margin": [1,5,2,1],
+    "content_margin": [0,4,0,0]
+  },
+  // Sidebar tree
+  {
+    "class": "sidebar_tree",
+    "row_padding": [8,4],
+    "indent": 12,
+    "indent_offset": 14,
+    "indent_top_level": false
+  },
+  // Sidebar rows
+  {
+    "class": "tree_row",
+    // "layer0.texture": "",
+    "layer0.tint": [23,42,58],
+    "layer0.opacity": 0,
+    "layer0.inner_margin": [1,1]
+  },
+  // Sidebar row selected
+  {
+    "class": "tree_row",
+    "attributes": ["selected"],
+    "layer0.opacity": 1
+  },
+  // Sidebar heading
+  {
+    "class": "sidebar_heading",
+    "color": [187,191,200]
+  },
+  // Sidebar heading selected
+  {
+    "class": "sidebar_heading",
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "shadow_offset": [0,0]
+  },
+  // Sidebar entry
+  {
+    "class": "sidebar_label",
+    "color": [187,191,200],
+    "font.face": "Hack"
+  },
+  {
+    "class": "sidebar_label",
+    "settings": ["edge_sidebar_font_small"],
+    "font.size": 10.0
+  },
+  {
+    "class": "sidebar_label",
+    "settings": ["edge_sidebar_font_normal"],
+    "font.size": 11.0
+  },
+  {
+    "class": "sidebar_label",
+    "settings": ["edge_sidebar_font_large"],
+    "font.size": 12.0
+  },
+  {
+    "class": "sidebar_label",
+    "settings": ["edge_sidebar_font_xlarge"],
+    "font.size": 14.0
+  },
+  // Sidebar folder entry
+  {
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["expandable"]}]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["hover"]}],
+    "color": [243,211,189]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["expandable"]}]
+  },
+  // Sidebar entry selected
+  {
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "color": [187,191,200]
+  },
+  // Tab labels
+  {
+    "class": "tab_label",
+    "fade": true,
+    "fg": [101, 115, 127] // 03
+  },
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control","attributes": ["hover"]}],
+    "fg": [192, 197, 206] // 05
+  },
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control","attributes": ["selected"]}],
+    "fg": [223, 225, 232] // 06
+  },
+  {
+    "class": "tab_label",
+    "attributes": ["transient"],
+    "font.italic": true
+  },
+  
+  // Tab Labels font size
+  {
+    "class": "tab_label",
+    "settings": ["spacegray_tabs_font_small"],
+    "font.size": 10.0
+  },
+  {
+    "class": "tab_label",
+    "settings": ["spacegray_tabs_font_normal"],
+    "font.size": 11.0
+  },
+  {
+    "class": "tab_label",
+    "settings": ["spacegray_tabs_font_large"],
+    "font.size": 12.0
+  },
+  {
+    "class": "tab_label",
+    "settings": ["spacegray_tabs_font_xlarge"],
+    "font.size": 14.0
+  },
+  
+  /* Status bar
+   ========================================================================= */
+  // Status bar container
+  {
+    "class": "status_bar",
+    "layer0.tint": [23,42,58],
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [2, 2],
+    "content_margin": [8, 8, 8, 8]
+  },
+  // Status bar button
+  {
+    "class": "status_button",
+    "min_size": [100, 0]
+  },
+  // Status bar label
+  {
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "color": [187,191,200],
+    "font.face": "Hack"
+  },
+  
+  /* Tabs
+   ========================================================================= */
+  
+  // Tab set
+  {
+    "class": "tabset_control",
+    "layer0.texture": "",
+    "layer0.tint": [8,26,32],
+    "layer0.inner_margin": 0,
+    "layer0.opacity": 1,
+    "content_margin": 0,
+    "tab_overlap": 0,
+    "tab_width": 128,
+    "tab_min_width": 48,
+    "tab_height": 36
+  },
+  // Tab element
+  {
+    "class": "tab_control",
+    "content_margin": [8,0],
+    "max_margin_trim": 0,
+    "hit_test_level": 0,
+    "layer0.texture": "",
+    "layer0.tint": [8,26,32],
+    "layer0.inner_margin": [5,5],
+    "layer0.opacity": 1
+  },
+  // Tab close state
+  {
+    "class": "tab_control",
+    "settings": ["show_tab_close_buttons"],
+    "content_margin": [8,0]
+  },
+  // Tab hover state
+  {
+    "class": "tab_control",
+    "attributes": ["hover"]
+  },
+  // Tab active state
+  {
+    "class": "tab_control",
+    "attributes": ["selected"],
+    "layer0.texture": "",
+    "layer0.tint": [23,42,58],
+  },
+  // Tab dirty state (close button hidden)
+  {
+    "class": "tab_control",
+    "settings": ["!show_tab_close_buttons"],
+    "attributes": ["dirty"],
+    "content_margin": [12,3,7,3]
+  },
+  // Tab label
+  {
+    "class": "tab_label",
+    "font.face": "Hack"
+  },
+  
+  /* Tooltips
+   * Tool tips shown when hovering over tabs and buttons
+  ========================================================================= */
+  // Tooltip container
+  {
+    "class": "tool_tip_control",
+    "layer0.tint": [169,188,208],
+    "layer0.inner_margin": [1, 1],
+    "layer0.opacity": 0.95,
+    "content_margin": [3, 3]
+  },
+  // Tooltip content
+  {
+    "class": "tool_tip_label_control",
+    "color": [8,26,32]
   },
   
 ]
