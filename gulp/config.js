@@ -1,8 +1,6 @@
 const paths = {
   src: {
     root: './src',
-    themes: './src/themes',
-    schemes: './src/schemes',
     settings: './src/settings',
     templates: './src/templates'
   },

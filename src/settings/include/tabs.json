@@ -17,19 +17,13 @@
 // Tab element
 {
   "class": "tab_control",
-  "content_margin": [8,0],
+  "content_margin": [8, 0],
   "max_margin_trim": 0,
   "hit_test_level": 0,
   "layer0.texture": "",
   "layer0.tint": [{{ toRgb(ui.colors.background) }}],
-  "layer0.inner_margin": [5,5],
+  "layer0.inner_margin": [5, 5],
   "layer0.opacity": 1
-},
-// Tab close state
-{
-  "class": "tab_control",
-  "settings": ["show_tab_close_buttons"],
-  "content_margin": [8,0]
 },
 // Tab hover state
 {
@@ -42,13 +36,6 @@
   "attributes": ["selected"],
   "layer0.texture": "",
   "layer0.tint": [{{ toRgb(ui.colors.highlight) }}],
-},
-// Tab dirty state (close button hidden)
-{
-  "class": "tab_control",
-  "settings": ["!show_tab_close_buttons"],
-  "attributes": ["dirty"],
-  "content_margin": [12,3,7,3]
 },
 // Tab label
 {

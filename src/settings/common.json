@@ -4,5 +4,8 @@
   "colorSpaceName": "sRGB",
   "fonts": {
     "fontFace": "Hack"
+  },
+  "paths": {
+    "assets": "Edge Theme/assets"
   }
 }

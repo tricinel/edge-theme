@@ -26,30 +26,30 @@ gulp.task('build:schemes', ['clean:schemes'], cb => {
 });
 
 gulp.task('process:schemes', () =>
-  gulp.src(`${paths.src.schemes}/*.json`).pipe(
-    flatmap((stream, file) => {
-      const basename = path.basename(file.path, path.extname(file.path));
-      const filename = path.basename(file.path);
+  gulp
+    .src([`${paths.src.settings}/*.json`, `!${paths.src.settings}/common.json`])
+    .pipe(
+      flatmap((stream, file) => {
+        const basename = path.basename(file.path, path.extname(file.path));
 
-      return gulp
-        .src(templates.scheme)
-        .pipe(
-          data(() => {
-            /* eslint-disable global-require */
-            const settings = require(`.${paths.src.settings}/${filename}`);
-            const scheme = require(file.path);
-            /* eslint-enable */
+        return gulp
+          .src(templates.scheme)
+          .pipe(
+            data(() => {
+              /* eslint-disable global-require */
+              const settings = require(file.path);
+              /* eslint-enable */
 
-            return { ...common, ...settings, ...scheme };
-          })
-        )
-        .pipe(nunjucksRender({ path: [paths.tmp], ext: '.tmTheme' }))
-        .pipe(
-          rename(scheme => {
-            scheme.basename = basename;
-          })
-        )
-        .pipe(gulp.dest(paths.dist.schemes));
-    })
-  )
+              return { ...common, ...settings };
+            })
+          )
+          .pipe(nunjucksRender({ path: [paths.tmp], ext: '.tmTheme' }))
+          .pipe(
+            rename(scheme => {
+              scheme.basename = basename;
+            })
+          )
+          .pipe(gulp.dest(paths.dist.schemes));
+      })
+    )
 );
