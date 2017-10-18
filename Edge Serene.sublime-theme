@@ -32,7 +32,7 @@
   {
     "class": "title_bar",
     "fg": [128,83,48],
-    "bg": [255,247,224]
+    "bg": [253,246,227]
   },
   
   /* BUTTONS
@@ -47,14 +47,14 @@
   {
    "class": "label_control",
    "parents": [{"class": "button_control", "attributes": ["hover"]}],
-   "color": [197,163,66]
+   "color": [205,183,130]
   },
   {
     "class": "button_control",
     "content_margin": [3, 12, 3, 12],
     "min_size": [80, 0],
-    "layer1.tint": [255,247,224],
-    "layer2.tint": [245,239,222],
+    "layer1.tint": [253,246,227],
+    "layer2.tint": [255,255,255],
     "layer0.opacity": 0.0,
     "layer0.inner_margin": [3, 3],
     "layer1.opacity": 1.0,
@@ -343,9 +343,9 @@
   // Regex Icon
   {
     "class": "icon_regex",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-regex-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/serene/find-regex-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-regex.png",
+    "layer1.texture": "Edge Theme/assets/icons/serene/find-regex.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -358,9 +358,9 @@
   // Preserve case sensitive
   {
     "class": "icon_case",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-case-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/serene/find-case-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-case.png",
+    "layer1.texture": "Edge Theme/assets/icons/serene/find-case.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -373,9 +373,9 @@
   // Wholeword
   {
     "class": "icon_whole_word",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-word-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/serene/find-word-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-word.png",
+    "layer1.texture": "Edge Theme/assets/icons/serene/find-word.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -388,9 +388,9 @@
   // Wrap
   {
     "class": "icon_wrap",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-wrap-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/serene/find-wrap-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-wrap.png",
+    "layer1.texture": "Edge Theme/assets/icons/serene/find-wrap.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -403,9 +403,9 @@
   // In selection
   {
     "class": "icon_in_selection",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-inselection-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/serene/find-inselection-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-inselection.png",
+    "layer1.texture": "Edge Theme/assets/icons/serene/find-inselection.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12,12]
   },
@@ -418,9 +418,9 @@
   // Highlight Result
   {
     "class": "icon_highlight",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-highlight-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/serene/find-highlight-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-highlight.png",
+    "layer1.texture": "Edge Theme/assets/icons/serene/find-highlight.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -433,9 +433,9 @@
   // Preserve Case
   {
     "class": "icon_preserve_case",
-    "layer0.texture": "Edge Theme/assets/icons/common/replace-preserve-case-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/serene/replace-preserve-case-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/replace-preserve-case.png",
+    "layer1.texture": "Edge Theme/assets/icons/serene/replace-preserve-case.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -448,9 +448,9 @@
   // Show context
   {
     "class": "icon_context",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-context-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/serene/find-context-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-context.png",
+    "layer1.texture": "Edge Theme/assets/icons/serene/find-context.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -463,9 +463,9 @@
   // Use buffer
   {
     "class": "icon_use_buffer",
-    "layer0.texture": "Edge Theme/assets/icons/common/use-buffer-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/serene/use-buffer-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/use-buffer.png",
+    "layer1.texture": "Edge Theme/assets/icons/serene/use-buffer.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -478,9 +478,9 @@
   // Reverse direction
   {
     "class": "icon_reverse",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-reverse-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/serene/find-reverse-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-reverse.png",
+    "layer1.texture": "Edge Theme/assets/icons/serene/find-reverse.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -497,7 +497,7 @@
   // Text input field item
   {
     "class": "text_line_control",
-    "layer0.tint": [255,247,224],
+    "layer0.tint": [253,246,227],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12, 3, 12],
   },
@@ -507,7 +507,7 @@
   {
     "class": "minimap_control",
     "settings": ["always_show_minimap_viewport"],
-    "viewport_color": [255,247,224,35],
+    "viewport_color": [253,246,227,35],
     "viewport_opacity": 1.0
   },
   {
@@ -534,7 +534,7 @@
     "class": "panel_control",
     "layer0.inner_margin": [0,0],
     "layer0.opacity": 1,
-    "layer0.tint": [221,201,144],
+    "layer0.tint": [234,225,203],
     "content_margin": 0
   },
   // Labels
@@ -547,19 +547,19 @@
   // Mini Quick Panel
   {
     "class": "mini_quick_panel_row",
-    "layer0.tint": [221,201,144],
+    "layer0.tint": [234,225,203],
     "layer0.opacity": 1
   },
   {
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": [128,83,48],
+    "layer0.tint": [212,71,77],
   },
   // Code Completion Dropdown
   {
     "class": "popup_control",
     "content_margin": [2, 2],
-    "layer0.tint": [221,201,144],
+    "layer0.tint": [234,225,203],
     "layer0.opacity": 1.0
   },
   {
@@ -569,8 +569,8 @@
   {
     "class": "auto_complete_label",
     "fg": [128,83,48],
-    "match_fg": [128,83,48],
-    "selected_fg": [221,201,144],
+    "match_fg": [212,71,77],
+    "selected_fg": [234,225,203],
     "selected_match_fg": [0,0,0]
   },
   {
@@ -599,12 +599,12 @@
   {
     "class": "quick_panel",
     "row_padding": [20, 10],
-    "layer0.tint": [221,201,144],
+    "layer0.tint": [234,225,203],
     "layer0.opacity": 1.0
   },
   {
     "class": "quick_panel_row",
-    "layer0.tint": [221,201,144],
+    "layer0.tint": [234,225,203],
     "layer0.inner_margin": [5, 5, 5, 5],
     "layer0.opacity": 1.0
   },
@@ -616,21 +616,21 @@
   {
     "class": "quick_panel_label",
     "fg": [128,83,48],
-    "match_fg": [128,83,48],
-    "selected_fg": [221,201,144],
+    "match_fg": [212,71,77],
+    "selected_fg": [234,225,203],
     "selected_match_fg": [0,0,0]
   },
   {
     "class": "quick_panel_path_label",
-    "fg": [128,83,48],
+    "fg": [212,71,77],
     "match_fg": [128,83,48],
-    "selected_fg": [221,201,144],
+    "selected_fg": [234,225,203],
     "selected_match_fg": [0,0,0]
   },
   {
     "class": "text_line_control",
     "parents": [{"class": "overlay_control"}],
-    "layer0.tint": [255,247,224]
+    "layer0.tint": [253,246,227]
   },
   // {
   //   "class": "quick_panel_score_label",
@@ -647,7 +647,7 @@
     "class": "sidebar_container",
     // "layer0.texture": "",
     "layer0.opacity": 1,
-    "layer0.tint": [255,247,224],
+    "layer0.tint": [253,246,227],
     "layer0.inner_margin": [1,5,2,1],
     "content_margin": [0,4,0,0]
   },
@@ -663,7 +663,7 @@
   {
     "class": "tree_row",
     // "layer0.texture": "",
-    "layer0.tint": [221,201,144],
+    "layer0.tint": [234,225,203],
     "layer0.opacity": 0,
     "layer0.inner_margin": [1,1]
   },
@@ -714,7 +714,7 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["expanded"]}],
-    "color": [128,83,48]
+    "color": [212,71,77]
   },
   {
     "class": "sidebar_label",
@@ -723,7 +723,7 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["hover"]}],
-    "color": [128,83,48]
+    "color": [212,71,77]
   },
   {
     "class": "sidebar_label",
@@ -806,7 +806,7 @@
   // Normal Vertical scrollbar track
   {
     "class": "scroll_bar_control",
-    "layer0.tint": [255,247,224],
+    "layer0.tint": [253,246,227],
     "layer0.inner_margin": [0, 3],
     "layer0.opacity": 1.0,
     "layer1.texture": "Edge Theme/assets/icons/serene/scrollbar.png",
@@ -818,7 +818,7 @@
   {
     "class": "scroll_bar_control",
     "attributes": ["horizontal"],
-    "layer0.tint": [255,247,224],
+    "layer0.tint": [253,246,227],
     "layer0.inner_margin": [0, 3],
     "layer0.opacity": 1.0,
     "layer1.texture": "Edge Theme/assets/icons/serenescrollbar.png",
@@ -836,7 +836,7 @@
   // Vertical puck controller
   {
     "class": "puck_control",
-    "layer0.tint": [255,247,224,20],
+    "layer0.tint": [253,246,227,20],
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [5, 5],
     "layer1.texture": "Edge Theme/assets/icons/serene/thumb-vertical.png",
@@ -923,7 +923,7 @@
   // Status bar container
   {
     "class": "status_bar",
-    "layer0.tint": [221,201,144],
+    "layer0.tint": [234,225,203],
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [2, 2],
     "content_margin": [8, 8, 8, 8]
@@ -956,7 +956,7 @@
   {
     "class": "tabset_control",
     "layer0.texture": "",
-    "layer0.tint": [255,247,224],
+    "layer0.tint": [253,246,227],
     "layer0.inner_margin": 0,
     "layer0.opacity": 1,
     "content_margin": 0,
@@ -972,7 +972,7 @@
     "max_margin_trim": 0,
     "hit_test_level": 0,
     "layer0.texture": "",
-    "layer0.tint": [255,247,224],
+    "layer0.tint": [253,246,227],
     "layer0.inner_margin": [5, 5],
     "layer0.opacity": 1
   },
@@ -1008,7 +1008,7 @@
   // Tooltip content
   {
     "class": "tool_tip_label_control",
-    "color": [255,247,224]
+    "color": [253,246,227]
   },
   
 ]

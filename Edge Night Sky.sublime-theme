@@ -343,9 +343,9 @@
   // Regex Icon
   {
     "class": "icon_regex",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-regex-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/find-regex-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-regex.png",
+    "layer1.texture": "Edge Theme/assets/icons/night-sky/find-regex.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -358,9 +358,9 @@
   // Preserve case sensitive
   {
     "class": "icon_case",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-case-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/find-case-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-case.png",
+    "layer1.texture": "Edge Theme/assets/icons/night-sky/find-case.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -373,9 +373,9 @@
   // Wholeword
   {
     "class": "icon_whole_word",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-word-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/find-word-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-word.png",
+    "layer1.texture": "Edge Theme/assets/icons/night-sky/find-word.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -388,9 +388,9 @@
   // Wrap
   {
     "class": "icon_wrap",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-wrap-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/find-wrap-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-wrap.png",
+    "layer1.texture": "Edge Theme/assets/icons/night-sky/find-wrap.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -403,9 +403,9 @@
   // In selection
   {
     "class": "icon_in_selection",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-inselection-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/find-inselection-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-inselection.png",
+    "layer1.texture": "Edge Theme/assets/icons/night-sky/find-inselection.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12,12]
   },
@@ -418,9 +418,9 @@
   // Highlight Result
   {
     "class": "icon_highlight",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-highlight-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/find-highlight-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-highlight.png",
+    "layer1.texture": "Edge Theme/assets/icons/night-sky/find-highlight.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -433,9 +433,9 @@
   // Preserve Case
   {
     "class": "icon_preserve_case",
-    "layer0.texture": "Edge Theme/assets/icons/common/replace-preserve-case-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/replace-preserve-case-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/replace-preserve-case.png",
+    "layer1.texture": "Edge Theme/assets/icons/night-sky/replace-preserve-case.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -448,9 +448,9 @@
   // Show context
   {
     "class": "icon_context",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-context-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/find-context-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-context.png",
+    "layer1.texture": "Edge Theme/assets/icons/night-sky/find-context.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -463,9 +463,9 @@
   // Use buffer
   {
     "class": "icon_use_buffer",
-    "layer0.texture": "Edge Theme/assets/icons/common/use-buffer-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/use-buffer-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/use-buffer.png",
+    "layer1.texture": "Edge Theme/assets/icons/night-sky/use-buffer.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
@@ -478,9 +478,9 @@
   // Reverse direction
   {
     "class": "icon_reverse",
-    "layer0.texture": "Edge Theme/assets/icons/common/find-reverse-hover.png",
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/find-reverse-hover.png",
     "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "Edge Theme/assets/icons/common/find-reverse.png",
+    "layer1.texture": "Edge Theme/assets/icons/night-sky/find-reverse.png",
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
