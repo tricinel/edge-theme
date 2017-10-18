@@ -1,0 +1,14 @@
+{
+  "Edge Theme - Night Sky":
+  {
+    "Preferences":
+    {
+      "theme": "Edge Night Sky.sublime-theme",
+      "color_scheme": "Packages/Edge Theme/schemes/Edge Night Sky.tmTheme",
+    },
+    {
+      "theme": "Edge Serene.sublime-theme",
+      "color_scheme": "Packages/Edge Theme/schemes/Edge Serene.tmTheme",
+    }
+  },
+}

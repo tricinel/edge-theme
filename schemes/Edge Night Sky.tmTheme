@@ -7,11 +7,11 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>semanticClass</key>
-	<string>edge.theme.serene</string>
+	<string>edge.nightsky</string>
 	<key>name</key>
-	<string>Edge-Theme-Serene</string>
+	<string>Edge Theme Night Sky</string>
 	<key>uuid</key>
-	<string>4d3d4e98-4ff1-45c6-bcb6-dc8f592abdb0</string>
+	<string>4dff426f-c96c-4e3b-834c-97a69a0c925d</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -19,22 +19,22 @@
 			<dict>
 				
 				<key>background</key>
-				<string>#FFF7E0</string>
+				<string>#081A20</string>
 				
 				<key>caret</key>
-				<string>#90B856</string>
+				<string>#F3D3BD</string>
 				
 				<key>foreground</key>
-				<string>#805330</string>
+				<string>#A9BCD0</string>
 				
 				<key>invisibles</key>
-				<string>#E7B27E</string>
+				<string>#172A3A</string>
 				
 				<key>lineHighlight</key>
-				<string>#D8CFB3</string>
+				<string>#172A3A</string>
 				
 				<key>selection</key>
-				<string>#805330</string>
+				<string>#172A3A</string>
 				
 			</dict>
 		</dict>
@@ -49,7 +49,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#D9A46C</string>
+				<string>#27667D</string>
 				
 			</dict>
 			
@@ -65,7 +65,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#5A7CBE</string>
+				<string>#ECC6B8</string>
 				
 			</dict>
 			
@@ -97,7 +97,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#F78400</string>
+				<string>#FF8141</string>
 				
 			</dict>
 			
@@ -113,7 +113,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#562EC2</string>
+				<string>#AE81FF</string>
 				
 			</dict>
 			
@@ -137,7 +137,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#DC333C</string>
+				<string>#FB3640</string>
 				
 			</dict>
 			
@@ -153,7 +153,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#AD314D</string>
+				<string>#FB3640</string>
 				
 			</dict>
 			
@@ -169,7 +169,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#DE4D50</string>
+				<string>#FF8141</string>
 				
 			</dict>
 			
@@ -185,7 +185,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#5B6B1A</string>
+				<string>#5DD39E</string>
 				
 			</dict>
 			
@@ -201,7 +201,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#5B6B1A</string>
+				<string>#5DD39E</string>
 				
 			</dict>
 			
@@ -217,7 +217,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#52AD40</string>
+				<string>#5DD39E</string>
 				
 			</dict>
 			
@@ -233,7 +233,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#52AD40</string>
+				<string>#5DD39E</string>
 				
 			</dict>
 			
@@ -249,7 +249,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#C52830</string>
+				<string>#FB3640</string>
 				
 			</dict>
 			
@@ -265,7 +265,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#52AD40</string>
+				<string>#5DD39E</string>
 				
 			</dict>
 			
@@ -281,7 +281,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#4FBF7C</string>
+				<string>#AD83D9</string>
 				
 			</dict>
 			
@@ -297,7 +297,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#632F44</string>
+				<string>#cce6f4</string>
 				
 			</dict>
 			
@@ -337,7 +337,7 @@
 			<dict>
 				
 				<key>background</key>
-				<string>#DC333C</string>
+				<string>#FB3640</string>
 				
 				<key>foreground</key>
 				<string>#F8F8F0</string>
@@ -375,7 +375,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#805330</string>
+				<string>#C6A7AB</string>
 				
 			</dict>
 			
@@ -391,7 +391,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#DC333C</string>
+				<string>#FF8141</string>
 				
 			</dict>
 			
@@ -407,7 +407,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#AD314D</string>
+				<string>#FF8141</string>
 				
 			</dict>
 			
@@ -423,7 +423,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#DC333C</string>
+				<string>#FF8141</string>
 				
 			</dict>
 			
@@ -439,7 +439,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#4D73B3</string>
+				<string>#AD83D9</string>
 				
 			</dict>
 			
