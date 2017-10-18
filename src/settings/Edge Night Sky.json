@@ -155,6 +155,13 @@
       "scope": "support.other.variable"
     },
     {
+      "name": "JavaScrip Dollar",
+      "scope": "variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js, support.class.dollar.only.js",
+      "settings": {
+        "foreground": "#FB3640"
+      }
+    },
+    {
       "name": "Invalid",
       "scope": "invalid",
       "settings": {
