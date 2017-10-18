@@ -8,6 +8,13 @@
   "layer0.tint": [{{ toRgb(ui.colors.highlight) }}],
   "content_margin": 0
 },
+// Labels
+{
+  "class": "label_control",
+  "parents": [{"class": "panel_control"}],
+  "color": [{{ toRgb(ui.colors.textColor) }}],
+  "font.face": "{{ fonts.fontFace }}"
+},
 // Mini Quick Panel
 {
   "class": "mini_quick_panel_row",
