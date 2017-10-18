@@ -40,6 +40,23 @@
 			{% endif %}
 		</dict>
 		{% endfor %}
+		{% for item in common.scheme %}
+		<dict>
+			<key>name</key>
+			<string>{{ item.name }}</string>
+			<key>scope</key>
+			<string>{{ item.scope }}</string>
+			{% if item.settings %}
+			<key>settings</key>
+			<dict>
+				{% for key, setting in item.settings %}
+				<key>{{ key }}</key>
+				<string>{{ setting }}</string>
+				{% endfor %}
+			</dict>
+			{% endif %}
+		</dict>
+		{% endfor %}
 	</array>
 </dict>
 </plist>
