@@ -73,6 +73,11 @@
 // Sidebar folder entry
 {
   "class": "sidebar_label",
+  "parents": [{"class": "tree_row","attributes": ["expanded"]}],
+  "color": [{{ toRgb(ui.colors.textHighlightColor) }}]
+},
+{
+  "class": "sidebar_label",
   "parents": [{"class": "tree_row","attributes": ["expandable"]}]
 },
 {
