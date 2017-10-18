@@ -13,6 +13,7 @@
   //=include "panels.json"
   //=include "quick-panel.json"
   //=include "sidebar.json"
+  //=include "scrollbars.json"
   //=include "status-bar.json"
   //=include "tabs.json"
   //=include "tooltips.json"
