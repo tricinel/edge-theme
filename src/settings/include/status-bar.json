@@ -20,3 +20,11 @@
   "color": [{{ toRgb(ui.colors.textColor) }}],
   "font.face": "{{ fonts.fontFace }}"
 },
+// Status bar panel switcher button
+{
+  "class": "panel_button_control",
+  "parents": [{"class": "status_bar"}],
+  "layer0.texture": "{{paths.assets}}/icons/{{id}}/panel-switch.png",
+  "layer0.opacity": 1.0,
+  "content_margin": [15, 7]
+},
