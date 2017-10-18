@@ -1,0 +1,29 @@
+[
+  {
+    "id": "preferences",
+    "children":
+    [
+      {
+        "caption": "Package Settings",
+        "id": "package-settings",
+        "children":
+        [
+          {
+            "caption": "Edge Theme",
+            "children":
+            [
+              {
+                "caption": "Activation",
+                "command": "edge_activate"
+              },
+              {
+                "caption": "Changelog",
+                "command": "edge_changes"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

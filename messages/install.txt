@@ -1,0 +1,12 @@
+Activation
+===========================================================================
+
+Activate the UI theme and color scheme by modifying your user preferences
+file, which you can find using the menu item Preferences → Package Settings
+→ Edge Theme → Preferences.
+
+Also you can use commands provided by the theme:
+
+1. Open Command Palette using menu item `Tools → Command Palette...`
+2. Choose `Edge Theme: Activation`
+3. Hit `Enter`
