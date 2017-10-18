@@ -11,7 +11,7 @@ import runSequence from 'run-sequence';
 import chalk from 'chalk';
 
 import { paths, templates } from './config';
-import { toRgb, hover, darken, lighten } from './utils';
+import { toRgb, toRgba, hover, darken, lighten } from './utils';
 import common from '../src/settings/common.json';
 
 gulp.task('build:themes', cb => {
@@ -51,6 +51,7 @@ gulp.task('process:themes', ['clean:themes'], () =>
                 ...common,
                 ...settings,
                 toRgb,
+                toRgba,
                 hover,
                 darken,
                 lighten

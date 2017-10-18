@@ -6,6 +6,8 @@ const toRgbArray = color => [color.r, color.g, color.b];
 
 const toRgb = hex => toRgbArray(toColor(hex).toRgb());
 
+const toRgba = (hex, alpha) => [...toRgbArray(toColor(hex).toRgb()), alpha];
+
 const darken = (hex, amount = 20) =>
   toRgbArray(
     toColor(hex)
@@ -22,4 +24,4 @@ const lighten = (hex, amount = 20) =>
 
 const hover = hex => darken(hex);
 
-export { toRgb, hover, darken, lighten };
+export { toRgb, toRgba, hover, darken, lighten };
