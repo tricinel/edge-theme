@@ -133,24 +133,41 @@
   // Symlink folder icon
   {
     "class": "icon_folder_dup",
+    "settings": ["edge_use_sidebar_folder_icons"],
     "layer0.texture": "Edge Theme/assets/icons/night-sky/folder-symlink.png",
     "layer0.opacity": 1.0,
     "content_margin": [11, 7]
   },
   {
     "class": "icon_folder_dup",
-    "parents":
-    [{ "class": "tree_row", "attributes": ["hover"] }],
+    "settings": ["edge_use_sidebar_folder_icons"],
+    "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
     "layer0.texture": "Edge Theme/assets/icons/night-sky/folder-symlink-hover.png"
   },
   {
     "class": "icon_folder_dup",
+    "settings": ["edge_use_sidebar_folder_icons"],
     "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
     "layer0.texture": "Edge Theme/assets/icons/night-sky/folder-symlink-expanded.png"
   },
   {
     "class": "icon_folder_dup",
-    "layer0.opacity": 0.0
+    "settings": ["!edge_use_sidebar_folder_icons"],
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/arrow-folder-right.png",
+    "layer0.opacity": 1.0,
+    "content_margin": [11, 7]
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": ["!edge_use_sidebar_folder_icons"],
+    "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/arrow-folder-right-hover.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": ["!edge_use_sidebar_folder_icons"],
+    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
+    "layer0.texture": "Edge Theme/assets/icons/night-sky/arrow-folder-down.png"
   },
   // Opened files
   {
