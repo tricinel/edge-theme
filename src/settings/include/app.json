@@ -5,7 +5,7 @@
 
 {
   "class": "sheet_container_control",
-  "layer0.tint": [33, 33, 33],
+  "layer0.tint": [{{ toRgb(ui.colors.background) }}],
   "layer0.opacity": 1.0
 },
 

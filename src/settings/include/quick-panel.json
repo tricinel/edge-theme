@@ -45,8 +45,3 @@
   "parents": [{"class": "overlay_control"}],
   "layer0.tint": [{{ toRgb(ui.colors.background) }}]
 },
-// {
-//   "class": "quick_panel_score_label",
-//   "fg": [126, 199, 239, 255],
-//   "selected_fg": [166, 229, 255, 255]
-// },
