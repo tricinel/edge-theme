@@ -5,7 +5,15 @@
       // Activation
 
       "color_scheme": "Packages/Edge Theme/schemes/Edge Night Sky.tmTheme",
-      "theme": "Edge Night Sky.sublime-theme"
+      "theme": "Edge Night Sky.sublime-theme",
+
+      // Reset
+
+      "edge_sidebar_font_small": false,
+      "edge_sidebar_font_normal": false,
+      "edge_sidebar_font_large": false,
+      "edge_sidebar_font_xlarge": false,
+      "edge_use_sidebar_icons": false
      }
   },
   "Edge Serene": {
@@ -14,7 +22,15 @@
       // Activation
 
       "color_scheme": "Packages/Edge Theme/schemes/Edge Serene.tmTheme",
-      "theme": "Edge Serene.sublime-theme"
+      "theme": "Edge Serene.sublime-theme",
+
+      // Reset
+
+      "edge_sidebar_font_small": false,
+      "edge_sidebar_font_normal": false,
+      "edge_sidebar_font_large": false,
+      "edge_sidebar_font_xlarge": false,
+      "edge_use_sidebar_icons": false
      }
   },
   "Edge Ocean": {
@@ -23,7 +39,15 @@
       // Activation
 
       "color_scheme": "Packages/Edge Theme/schemes/Edge Ocean.tmTheme",
-      "theme": "Edge Ocean.sublime-theme"
+      "theme": "Edge Ocean.sublime-theme",
+
+      // Reset
+
+      "edge_sidebar_font_small": false,
+      "edge_sidebar_font_normal": false,
+      "edge_sidebar_font_large": false,
+      "edge_sidebar_font_xlarge": false,
+      "edge_use_sidebar_icons": false
      }
   }
 }

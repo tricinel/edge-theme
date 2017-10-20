@@ -15,22 +15,28 @@
 // -----------------------------------------------------------------------------
 // Use https://github.com/kizza/Table-of-comments for the quick navigation
 
-//  1 Global
+//  1 Sidebar
 //    1.1 Fonts
+//    1.2 Icons
 
 {
-  // > 1 Global
+  // > 1 Sidebar
   // -----------------------------------
 
-  // Global options enable you to control some aspects of UI appearance at once.
-  // Generally, there are four kinds of global options which you can use:
+  // Sidebar options enable you to control some aspects of UI appearance at once.
 
   //
-  // >> 2.1 Fonts
+  // >> 1.1 Fonts
   // Choose one option from this section
 
   "edge_sidebar_font_small": false,
   "edge_sidebar_font_normal": false,
   "edge_sidebar_font_large": false,
-  "edge_sidebar_font_xlarge": false
+  "edge_sidebar_font_xlarge": false,
+
+  //
+  // >> 1.2 Icons
+  // Choose whether to show the folder and file icons in the sidebar
+
+  "edge_use_sidebar_folder_icons": true
 }
