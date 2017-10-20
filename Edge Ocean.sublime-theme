@@ -755,49 +755,6 @@
     "layer0.opacity": 1,
     "content_margin": [9, 9]
   },
-  // Tab labels
-  {
-    "class": "tab_label",
-    "fade": true,
-    "fg": [101, 115, 127] // 03
-  },
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control","attributes": ["hover"]}],
-    "fg": [192, 197, 206] // 05
-  },
-  {
-    "class": "tab_label",
-    "parents": [{"class": "tab_control","attributes": ["selected"]}],
-    "fg": [223, 225, 232] // 06
-  },
-  {
-    "class": "tab_label",
-    "attributes": ["transient"],
-    "font.italic": true
-  },
-  
-  // Tab Labels font size
-  {
-    "class": "tab_label",
-    "settings": ["spacegray_tabs_font_small"],
-    "font.size": 10.0
-  },
-  {
-    "class": "tab_label",
-    "settings": ["spacegray_tabs_font_normal"],
-    "font.size": 11.0
-  },
-  {
-    "class": "tab_label",
-    "settings": ["spacegray_tabs_font_large"],
-    "font.size": 12.0
-  },
-  {
-    "class": "tab_label",
-    "settings": ["spacegray_tabs_font_xlarge"],
-    "font.size": 14.0
-  },
   
   
   /* Scrollbars
@@ -992,7 +949,23 @@
   {
     "class": "tab_label",
     "font.face": "Hack",
-    "color": [82,166,240]
+    "fade": true,
+    "fg": [82,166,240]
+  },
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control","attributes": ["hover"]}],
+    "fg": [82,166,240]
+  },
+  {
+    "class": "tab_label",
+    "parents": [{"class": "tab_control","attributes": ["selected"]}],
+    "fg": [112,220,239]
+  },
+  {
+    "class": "tab_label",
+    "attributes": ["transient"],
+    "font.italic": true
   },
   
   /* Tooltips

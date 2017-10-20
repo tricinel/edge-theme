@@ -41,5 +41,21 @@
 {
   "class": "tab_label",
   "font.face": "{{ fonts.fontFace }}",
-  "color": [{{ toRgb(ui.colors.tabs.textColor) }}]
+  "fade": true,
+  "fg": [{{ toRgb(ui.colors.tabs.textColor) }}]
+},
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control","attributes": ["hover"]}],
+  "fg": [{{ toRgb(ui.colors.tabs.textColor) }}]
+},
+{
+  "class": "tab_label",
+  "parents": [{"class": "tab_control","attributes": ["selected"]}],
+  "fg": [{{ toRgb(ui.colors.tabs.textColorActive) }}]
+},
+{
+  "class": "tab_label",
+  "attributes": ["transient"],
+  "font.italic": true
 },

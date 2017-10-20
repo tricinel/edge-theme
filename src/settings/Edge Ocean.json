@@ -23,7 +23,8 @@
         "background": "#012A40",
         "tab": "#012A40",
         "active": "#0F4F68",
-        "textColor": "#52A6F0"
+        "textColor": "#52A6F0",
+        "textColorActive": "#70DCEF"
       }
     }
   },
