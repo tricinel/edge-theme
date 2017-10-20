@@ -40,5 +40,6 @@
 // Tab label
 {
   "class": "tab_label",
-  "font.face": "{{ fonts.fontFace }}"
+  "font.face": "{{ fonts.fontFace }}",
+  "color": [{{ toRgb(ui.colors.tabs.textColor) }}]
 },

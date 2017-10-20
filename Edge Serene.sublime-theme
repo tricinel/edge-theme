@@ -1,4 +1,4 @@
-// Edge-Theme-Serene
+// Edge Serene
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Superb theme for Sublime Text 3
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -991,7 +991,8 @@
   // Tab label
   {
     "class": "tab_label",
-    "font.face": "Hack"
+    "font.face": "Hack",
+    "color": [128,83,48]
   },
   
   /* Tooltips

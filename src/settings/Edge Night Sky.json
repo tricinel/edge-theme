@@ -1,5 +1,5 @@
 {
-  "name": "Edge Theme Night Sky",
+  "name": "Edge Night Sky",
   "uuid": "4dff426f-c96c-4e3b-834c-97a69a0c925d",
   "semanticClass": "edge.nightsky",
   "id": "night-sky",
@@ -22,7 +22,8 @@
       "tabs": {
         "background": "#081A20",
         "tab": "#081A20",
-        "active": "#172A3A"
+        "active": "#172A3A",
+        "textColor": "#BBBFC8"
       }
     }
   },

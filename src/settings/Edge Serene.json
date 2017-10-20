@@ -1,5 +1,5 @@
 {
-  "name": "Edge-Theme-Serene",
+  "name": "Edge Serene",
   "uuid": "4d3d4e98-4ff1-45c6-bcb6-dc8f592abdb0",
   "semanticClass": "edge.theme.serene",
   "id": "serene",
@@ -22,7 +22,8 @@
       "tabs": {
         "background": "#FDF6E3",
         "tab": "#FDF6E3",
-        "active": "#D4474D"
+        "active": "#D4474D",
+        "textColor": "#805330"
       }
     }
   },
