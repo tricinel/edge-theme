@@ -2,12 +2,14 @@ const paths = {
   src: {
     root: './src',
     settings: './src/settings',
-    templates: './src/templates'
+    templates: './src/templates',
+    targets: './src/targets'
   },
   dist: {
     root: './',
     schemes: './schemes',
-    themes: './'
+    themes: './',
+    releases: './releases'
   },
   tmp: './.tmp'
 };
@@ -17,4 +19,24 @@ const templates = {
   scheme: './src/templates/scheme.nunjucks'
 };
 
-export { paths, templates };
+const deploy = {
+  st3: {
+    files: [
+      './assets/icons/**/*.png',
+      './icons/**/*.png',
+      './messages/*.md',
+      './schemes/*.tmTheme',
+      './utils/*.py',
+      './.supports-a-file-icon-customization',
+      './CHANGELOG.md',
+      './*.sublime-*',
+      './E.py',
+      './Icons.py',
+      './Edge.skins',
+      './messages.json'
+    ],
+    docs: ['./src/targets/st3/*.md']
+  }
+};
+
+export { paths, templates, deploy };

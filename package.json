@@ -11,7 +11,8 @@
     "build:themes": "gulp build:themes",
     "build:schemes": "gulp build:schemes",
     "bump": "gulp bump",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "release": "gulp release"
   },
   "devDependencies": {
     "babel": "^6.23.0",
@@ -31,7 +32,9 @@
     "gulp": "^3.9.1",
     "gulp-bump": "^2.8.0",
     "gulp-data": "^1.2.1",
+    "gulp-debug": "^3.1.0",
     "gulp-flatmap": "^1.0.0",
+    "gulp-git": "^2.4.2",
     "gulp-imagemin": "^3.4.0",
     "gulp-include": "^2.3.1",
     "gulp-nunjucks-render": "^2.2.1",
