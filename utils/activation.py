@@ -12,7 +12,8 @@ NO_SELECTION = -1
 PREFERENCES = 'Preferences.sublime-settings'
 THEMES = [
   'Edge Night Sky',
-  'Edge Serene'
+  'Edge Serene',
+  'Edge Ocean'
 ]
 
 def get_color_scheme():

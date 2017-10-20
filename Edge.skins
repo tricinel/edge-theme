@@ -16,5 +16,14 @@
       "color_scheme": "Packages/Edge Theme/schemes/Edge Serene.tmTheme",
       "theme": "Edge Serene.sublime-theme"
      }
+  },
+  "Edge Ocean": {
+    "Preferences": {
+
+      // Activation
+
+      "color_scheme": "Packages/Edge Theme/schemes/Edge Ocean.tmTheme",
+      "theme": "Edge Ocean.sublime-theme"
+     }
   }
 }

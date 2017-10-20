@@ -1,0 +1,288 @@
+{
+  "name": "Edge Ocean",
+  "uuid": "5ac7a378-1b26-44e3-a917-4cc225776873",
+  "semanticClass": "edge.theme.ocean",
+  "id": "ocean",
+  "ui": {
+    "settings": {
+      "background": "#012A40",
+      "caret": "#52A6F0",
+      "foreground": "#52A6F0",
+      "invisibles": "#1D6185",
+      "lineHighlight": "#0F4F68",
+      "selection": "#265A63"
+    },
+    "colors": {
+      "background": "#012A40",
+      "foreground": "#52A6F0",
+      "highlight": "#0F4F68",
+      "textColor": "#52A6F0",
+      "borderColor": "#14435C",
+      "textHighlightColor": "#70DCEF",
+      "tabs": {
+        "background": "#012A40",
+        "tab": "#012A40",
+        "active": "#0F4F68",
+        "textColor": "#52A6F0"
+      }
+    }
+  },
+  "scheme": [
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "settings": {
+        "foreground": "#0F67A0"
+      }
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "settings": {
+        "foreground": "#69C0FA"
+      }
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#F5D2AC"
+      }
+    },
+    {
+      "name": "Built-in constant",
+      "scope": "constant.language",
+      "settings": {
+        "foreground": "#41EAD4"
+      }
+    },
+    {
+      "name": "User-defined constant",
+      "scope": "constant.character, constant.other",
+      "settings": {
+        "foreground": "#00BFB2"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": "variable"
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#FF947F"
+      }
+    },
+    {
+      "name": "Storage",
+      "scope": "storage",
+      "settings": {
+        "foreground": "#FFC642"
+      }
+    },
+    {
+      "name": "Storage type",
+      "scope": "storage.type",
+      "settings": {
+        "foreground": "#FDCA40"
+      }
+    },
+    {
+      "name": "Class name",
+      "scope": "entity.name.class",
+      "settings": {
+        "foreground": "#1FA1AD"
+      }
+    },
+    {
+      "name": "Inherited class",
+      "scope": "entity.other.inherited-class",
+      "settings": {
+        "foreground": "#1FA1AD"
+      }
+    },
+    {
+      "name": "Function name",
+      "scope": "entity.name.function",
+      "settings": {
+        "foreground": "#12D3E5"
+      }
+    },
+    {
+      "name": "Function argument",
+      "scope": "variable.parameter",
+      "settings": {
+        "foreground": "#12D3E5"
+      }
+    },
+    {
+      "name": "Tag name",
+      "scope": "entity.name.tag",
+      "settings": {
+        "foreground": "#E75E6D"
+      }
+    },
+    {
+      "name": "Tag attribute",
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "foreground": "#40C7BC"
+      }
+    },
+    {
+      "name": "Library function",
+      "scope": "support.function",
+      "settings": {
+        "foreground": "#12D3E5"
+      }
+    },
+    {
+      "name": "Library constant",
+      "scope": "support.constant",
+      "settings": {
+        "foreground": "#00ABE7"
+      }
+    },
+    {
+      "name": "Library class&#x2f;type",
+      "scope": "support.type, support.class",
+      "settings": {
+        "foreground": "#0B9EB5"
+      }
+    },
+    {
+      "name": "Library variable",
+      "scope": "support.other.variable"
+    },
+    {
+      "name": "JavaScrip Dollar",
+      "scope": "variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js, support.class.dollar.only.js",
+      "settings": {
+        "foreground": "#E75E6D"
+      }
+    },
+    {
+      "name": "Invalid",
+      "scope": "invalid",
+      "settings": {
+        "background": "#F8F8F0",
+        "foreground": "#DC333C"
+      }
+    },
+    {
+      "name": "Invalid deprecated",
+      "scope": "invalid.deprecated",
+      "settings":{
+        "background": "#AE81FF",
+        "foreground": "#F8F8F0"
+      }
+    },
+
+    {
+      "name": "CSS Tag Name",
+      "scope": "meta.selector.css entity.name.tag",
+      "settings": {
+        "foreground": "#E75E6D"
+      }
+    },
+    {
+      "name": "CSS Pseudo-class",
+      "scope": "meta.selector.css entity.other.attribute-name.tag.pseudo-class",
+      "settings": {
+        "foreground": "#12D3E5"
+      }
+    },
+    {
+      "name": "CSS ID",
+      "scope": "meta.selector.css entity.other.attribute-name.id",
+      "settings": {
+        "foreground": "#EA261B"
+      }
+    },
+    {
+      "name": "CSS Class",
+      "scope": "meta.selector.css entity.other.attribute-name.class",
+      "settings": {
+        "foreground": "#DCC3A4"
+      }
+    },
+    {
+      "name": "CSS Property Name",
+      "scope": "source.css meta.property-list.css meta.property-name.css support.type.property-name.css",
+      "settings": {
+        "foreground": "#1FA1AD"
+      }
+    },
+    {
+      "name": "CSS Number",
+      "scope": "source.css meta.property-list.css meta.property-value.css constant.numeric.css",
+      "settings": {
+        "foreground": "#FF947F"
+      }
+    },
+    {
+      "name": "CSS Unit",
+      "scope": "source.css meta.property-list.css meta.property-value.css keyword.other.unit.css",
+      "settings": {
+        "foreground": "#00ABE7"
+      }
+    },
+    {
+      "name": "CSS Constant Property Value",
+      "scope": "source.css meta.property-list.css meta.property-value.css support.constant.property-value.css",
+      "settings": {
+        "foreground": "#00ABE7"
+      }
+    },
+    {
+      "name": "Python Variable",
+      "scope": "source.python meta.function-call.python variable.language.python",
+      "settings": {
+        "foreground": "#E75E6D"
+      }
+    },
+    {
+      "name": "SublimeLinter Warning",
+      "scope": "sublimelinter.mark.warning",
+      "settings": {
+        "foreground": "#F78400"
+      }
+    },
+    {
+      "name": "SublimeLinter Gutter Mark",
+      "scope": "sublimelinter.gutter-mark",
+      "settings": {
+        "foreground": "#0B9EB5"
+      }
+    },
+    {
+      "name": "SublimeLinter Error",
+      "scope": "sublimelinter.mark.error",
+      "settings": {
+        "foreground": "#E75E6D"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Unmatched",
+      "scope": "brackethighlighter.unmatched",
+      "settings": {
+        "foreground": "#E75E6D"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Quote",
+      "scope": "brackethighlighter.quote",
+      "settings": {
+        "foreground": "#FDCA40"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Curly",
+      "scope": "brackethighlighter.default",
+      "settings": {
+        "foreground": "#00BFB2"
+      }
+    }
+  ]
+}
