@@ -3,12 +3,12 @@ const paths = {
     root: './src',
     settings: './src/settings',
     templates: './src/templates',
-    targets: './src/targets'
+    editors: './src/editors'
   },
   dist: {
     root: './',
-    schemes: './schemes',
-    themes: './',
+    schemes: './src/editors/st3/schemes',
+    themes: './src/editors/st3/',
     releases: './releases'
   },
   tmp: './.tmp'
@@ -21,21 +21,26 @@ const templates = {
 
 const deploy = {
   st3: {
-    files: [
-      './assets/icons/**/*.png',
-      './icons/**/*.png',
-      './messages/*.md',
-      './schemes/*.tmTheme',
-      './utils/*.py',
-      './.supports-a-file-icon-customization',
-      './CHANGELOG.md',
-      './*.sublime-*',
-      './E.py',
-      './Icons.py',
-      './Edge.skins',
-      './messages.json'
-    ],
-    docs: ['./src/targets/st3/*.md']
+    files: {
+      withFolderStructure: [
+        './assets/icons/**/*.png',
+        './icons/**/*.png',
+        './messages/*.md',
+        './CHANGELOG.md',
+        './messages.json'
+      ],
+      inRoot: [
+        './src/editors/st3/schemes/*.tmTheme',
+        './src/editors/st3/utils/*.py',
+        './src/editors/st3/*.sublime-*',
+        './src/editors/st3/E.py',
+        './src/editors/st3/Icons.py',
+        './src/editors/st3/Edge.skins',
+        './src/editors/st3/*.md',
+        './src/editors/st3/.supports-a-file-icon-customization',
+        './src/editors/st3/.gitignore'
+      ]
+    }
   }
 };
 
