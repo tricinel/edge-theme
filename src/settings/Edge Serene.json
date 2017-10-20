@@ -31,7 +31,7 @@
       "name": "Comment",
       "scope": "comment",
       "settings": {
-        "foreground": "#D9A46C"
+        "foreground": "#C7B49F"
       }
     },
     {
@@ -91,28 +91,28 @@
       "name": "Class name",
       "scope": "entity.name.class",
       "settings": {
-        "foreground": "#5B6B1A"
+        "foreground": "#1FA1AD"
       }
     },
     {
       "name": "Inherited class",
       "scope": "entity.other.inherited-class",
       "settings": {
-        "foreground": "#5B6B1A"
+        "foreground": "#1FA1AD"
       }
     },
     {
       "name": "Function name",
       "scope": "entity.name.function",
       "settings": {
-        "foreground": "#52AD40"
+        "foreground": "#3A8F2B"
       }
     },
     {
       "name": "Function argument",
       "scope": "variable.parameter",
       "settings": {
-        "foreground": "#52AD40"
+        "foreground": "#3A8F2B"
       }
     },
     {
@@ -126,14 +126,14 @@
       "name": "Tag attribute",
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": "#52AD40"
+        "foreground": "#3A8F2B"
       }
     },
     {
       "name": "Library function",
       "scope": "support.function",
       "settings": {
-        "foreground": "#4FBF7C"
+        "foreground": "#1B944D"
       }
     },
     {
@@ -147,7 +147,7 @@
       "name": "Library class&#x2f;type",
       "scope": "support.type, support.class",
       "settings": {
-        "foreground": "#8AB2F5"
+        "foreground": "#0B9EB5"
       }
     },
     {
@@ -177,6 +177,35 @@
         "foreground": "#F8F8F0"
       }
     },
+
+    {
+      "name": "CSS Tag Name",
+      "scope": "meta.selector.css entity.name.tag",
+      "settings": {
+        "foreground": "#DC333C"
+      }
+    },
+    {
+      "name": "CSS Pseudo-class",
+      "scope": "meta.selector.css entity.other.attribute-name.tag.pseudo-class",
+      "settings": {
+        "foreground": "#805330"
+      }
+    },
+    {
+      "name": "CSS ID",
+      "scope": "meta.selector.css entity.other.attribute-name.id",
+      "settings": {
+        "foreground": "#AD314D"
+      }
+    },
+    {
+      "name": "CSS Class",
+      "scope": "meta.selector.css entity.other.attribute-name.class",
+      "settings": {
+        "foreground": "#1B944D"
+      }
+    },
     {
       "name": "CSS Property Name",
       "scope": "source.css meta.property-list.css meta.property-name.css support.type.property-name.css",
@@ -202,7 +231,7 @@
       "name": "CSS Constant Property Value",
       "scope": "source.css meta.property-list.css meta.property-value.css support.constant.property-value.css",
       "settings": {
-        "foreground": "#DC333C"
+        "foreground": "#5A7CBE"
       }
     },
     {
@@ -223,7 +252,7 @@
       "name": "SublimeLinter Gutter Mark",
       "scope": "sublimelinter.gutter-mark",
       "settings": {
-        "foreground": "#8AB2F5"
+        "foreground": "#0B9EB5"
       }
     },
     {
@@ -231,6 +260,27 @@
       "scope": "sublimelinter.mark.error",
       "settings": {
         "foreground": "#DC333C"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Unmatched",
+      "scope": "brackethighlighter.unmatched",
+      "settings": {
+        "foreground": "#DC333C"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Quote",
+      "scope": "brackethighlighter.quote",
+      "settings": {
+        "foreground": "#3A8F2B"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Curly",
+      "scope": "brackethighlighter.default",
+      "settings": {
+        "foreground": "#1FA1AD"
       }
     }
   ]

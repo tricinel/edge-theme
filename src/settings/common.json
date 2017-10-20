@@ -14,7 +14,7 @@
         "name": "JSON - Level 0",
         "scope": "source.json meta.structure.dictionary.json string.quoted.double.json - meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta.structure.dictionary.json punctuation.definition.string - meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string",
         "settings": {
-          "foreground": "#46b1c9"
+          "foreground": "#2A879C"
         }
       },
       {
@@ -74,13 +74,6 @@
         }
       },
       {
-        "name": "GitGutter ",
-        "scope": "",
-        "settings": {
-          "foreground": "#"
-        }
-      },
-      {
         "name": "GitGutter Ignored",
         "scope": "markup.ignored.git_gutter",
         "settings": {
@@ -105,7 +98,7 @@
         "name": "GitGutter Changed",
         "scope": "markup.changed.git_gutter",
         "settings": {
-          "foreground": "#f9dc5c"
+          "foreground": "#F6A623"
         }
       },
       {

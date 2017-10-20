@@ -49,7 +49,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#D9A46C</string>
+				<string>#C7B49F</string>
 				
 			</dict>
 			
@@ -185,7 +185,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#5B6B1A</string>
+				<string>#1FA1AD</string>
 				
 			</dict>
 			
@@ -201,7 +201,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#5B6B1A</string>
+				<string>#1FA1AD</string>
 				
 			</dict>
 			
@@ -217,7 +217,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#52AD40</string>
+				<string>#3A8F2B</string>
 				
 			</dict>
 			
@@ -233,7 +233,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#52AD40</string>
+				<string>#3A8F2B</string>
 				
 			</dict>
 			
@@ -265,7 +265,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#52AD40</string>
+				<string>#3A8F2B</string>
 				
 			</dict>
 			
@@ -281,7 +281,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#4FBF7C</string>
+				<string>#1B944D</string>
 				
 			</dict>
 			
@@ -313,7 +313,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#8AB2F5</string>
+				<string>#0B9EB5</string>
 				
 			</dict>
 			
@@ -383,6 +383,70 @@
 		
 		<dict>
 			<key>name</key>
+			<string>CSS Tag Name</string>
+			<key>scope</key>
+			<string>meta.selector.css entity.name.tag</string>
+			
+			<key>settings</key>
+			<dict>
+				
+				<key>foreground</key>
+				<string>#DC333C</string>
+				
+			</dict>
+			
+		</dict>
+		
+		<dict>
+			<key>name</key>
+			<string>CSS Pseudo-class</string>
+			<key>scope</key>
+			<string>meta.selector.css entity.other.attribute-name.tag.pseudo-class</string>
+			
+			<key>settings</key>
+			<dict>
+				
+				<key>foreground</key>
+				<string>#805330</string>
+				
+			</dict>
+			
+		</dict>
+		
+		<dict>
+			<key>name</key>
+			<string>CSS ID</string>
+			<key>scope</key>
+			<string>meta.selector.css entity.other.attribute-name.id</string>
+			
+			<key>settings</key>
+			<dict>
+				
+				<key>foreground</key>
+				<string>#AD314D</string>
+				
+			</dict>
+			
+		</dict>
+		
+		<dict>
+			<key>name</key>
+			<string>CSS Class</string>
+			<key>scope</key>
+			<string>meta.selector.css entity.other.attribute-name.class</string>
+			
+			<key>settings</key>
+			<dict>
+				
+				<key>foreground</key>
+				<string>#1B944D</string>
+				
+			</dict>
+			
+		</dict>
+		
+		<dict>
+			<key>name</key>
 			<string>CSS Property Name</string>
 			<key>scope</key>
 			<string>source.css meta.property-list.css meta.property-name.css support.type.property-name.css</string>
@@ -439,7 +503,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#DC333C</string>
+				<string>#5A7CBE</string>
 				
 			</dict>
 			
@@ -487,7 +551,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#8AB2F5</string>
+				<string>#0B9EB5</string>
 				
 			</dict>
 			
@@ -509,6 +573,54 @@
 			
 		</dict>
 		
+		<dict>
+			<key>name</key>
+			<string>Bracket Highlighter Unmatched</string>
+			<key>scope</key>
+			<string>brackethighlighter.unmatched</string>
+			
+			<key>settings</key>
+			<dict>
+				
+				<key>foreground</key>
+				<string>#DC333C</string>
+				
+			</dict>
+			
+		</dict>
+		
+		<dict>
+			<key>name</key>
+			<string>Bracket Highlighter Quote</string>
+			<key>scope</key>
+			<string>brackethighlighter.quote</string>
+			
+			<key>settings</key>
+			<dict>
+				
+				<key>foreground</key>
+				<string>#3A8F2B</string>
+				
+			</dict>
+			
+		</dict>
+		
+		<dict>
+			<key>name</key>
+			<string>Bracket Highlighter Curly</string>
+			<key>scope</key>
+			<string>brackethighlighter.default</string>
+			
+			<key>settings</key>
+			<dict>
+				
+				<key>foreground</key>
+				<string>#1FA1AD</string>
+				
+			</dict>
+			
+		</dict>
+		
 		
 		<dict>
 			<key>name</key>
@@ -520,7 +632,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#46b1c9</string>
+				<string>#2A879C</string>
 				
 			</dict>
 			
@@ -656,22 +768,6 @@
 		
 		<dict>
 			<key>name</key>
-			<string>GitGutter </string>
-			<key>scope</key>
-			<string></string>
-			
-			<key>settings</key>
-			<dict>
-				
-				<key>foreground</key>
-				<string>#</string>
-				
-			</dict>
-			
-		</dict>
-		
-		<dict>
-			<key>name</key>
 			<string>GitGutter Ignored</string>
 			<key>scope</key>
 			<string>markup.ignored.git_gutter</string>
@@ -728,7 +824,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#f9dc5c</string>
+				<string>#F6A623</string>
 				
 			</dict>
 			

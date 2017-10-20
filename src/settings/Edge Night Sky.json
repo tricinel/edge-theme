@@ -232,6 +232,27 @@
       "settings": {
         "foreground": "#FB3640"
       }
+    },
+    {
+      "name": "Bracket Highlighter Unmatched",
+      "scope": "brackethighlighter.unmatched",
+      "settings": {
+        "foreground": "#FB3640"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Quote",
+      "scope": "brackethighlighter.quote",
+      "settings": {
+        "foreground": "#5DD39E"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Curly",
+      "scope": "brackethighlighter.default",
+      "settings": {
+        "foreground": "#AD83D9"
+      }
     }
   ]
 }

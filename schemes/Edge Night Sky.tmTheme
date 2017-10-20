@@ -509,6 +509,54 @@
 			
 		</dict>
 		
+		<dict>
+			<key>name</key>
+			<string>Bracket Highlighter Unmatched</string>
+			<key>scope</key>
+			<string>brackethighlighter.unmatched</string>
+			
+			<key>settings</key>
+			<dict>
+				
+				<key>foreground</key>
+				<string>#FB3640</string>
+				
+			</dict>
+			
+		</dict>
+		
+		<dict>
+			<key>name</key>
+			<string>Bracket Highlighter Quote</string>
+			<key>scope</key>
+			<string>brackethighlighter.quote</string>
+			
+			<key>settings</key>
+			<dict>
+				
+				<key>foreground</key>
+				<string>#5DD39E</string>
+				
+			</dict>
+			
+		</dict>
+		
+		<dict>
+			<key>name</key>
+			<string>Bracket Highlighter Curly</string>
+			<key>scope</key>
+			<string>brackethighlighter.default</string>
+			
+			<key>settings</key>
+			<dict>
+				
+				<key>foreground</key>
+				<string>#AD83D9</string>
+				
+			</dict>
+			
+		</dict>
+		
 		
 		<dict>
 			<key>name</key>
@@ -520,7 +568,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#46b1c9</string>
+				<string>#2A879C</string>
 				
 			</dict>
 			
@@ -656,22 +704,6 @@
 		
 		<dict>
 			<key>name</key>
-			<string>GitGutter </string>
-			<key>scope</key>
-			<string></string>
-			
-			<key>settings</key>
-			<dict>
-				
-				<key>foreground</key>
-				<string>#</string>
-				
-			</dict>
-			
-		</dict>
-		
-		<dict>
-			<key>name</key>
 			<string>GitGutter Ignored</string>
 			<key>scope</key>
 			<string>markup.ignored.git_gutter</string>
@@ -728,7 +760,7 @@
 			<dict>
 				
 				<key>foreground</key>
-				<string>#f9dc5c</string>
+				<string>#F6A623</string>
 				
 			</dict>
 			
