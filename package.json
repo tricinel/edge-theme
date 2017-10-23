@@ -1,6 +1,6 @@
 {
   "name": "edge-theme",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Edge Theme for Sublime Text 3",
   "main": "gulpfile.babel.js",
   "author": "tricinel <bogdan@bogdanlazar.com>",
