@@ -16,6 +16,7 @@
 * `yarn build:themes` will build the theme files
 * `yarn build:schemes` will build the scheme files
 * `yarn build` will build everything
+* `yarn test:release` will copy the release files into `release/` in order for you to see the changes reflected in the editor's UI.
 
 ### Files and folder structure
 
@@ -53,6 +54,7 @@
 ├── package.json
 └── yarn.lock
 ```
+
 * `assets/icons` contains the UI icons for the various themes
 * `gulp` contains the tasks for development, e.g. building the themes
 * `icons` contains the file_type icons. Please note that Edge for Sublime Text 3 supports [A File Icon](https://github.com/ihodev/a-file-icon) package.
@@ -77,4 +79,6 @@ There's a small workflow you can apply to make modifications on the themes and h
 5. `cd <path-to-sublime-text-3-packages> && rm -rf Edge\ Theme #if you have the theme installed`
 6. `ln -s <path-to-edge-theme-repo>/releases/st3 Edge Theme`
 7. `cd <path-to-edge-theme-repo>`
-8. `yarn watch`
+8. Make changes
+9. `yarn build`
+10. `yarn test:release`

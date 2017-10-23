@@ -29,6 +29,21 @@ gulp.task('release', cb => {
   );
 });
 
+gulp.task('copy:release', cb => {
+  runSequence('release:copy:dist', 'release:copy:editors', error => {
+    if (error) {
+      console.log(
+        chalk.red(
+          `There was an issue copying the release files for your themes and schemes:\n${error.message}`
+        )
+      );
+    } else {
+      console.log(chalk.green('Release copy successful!'));
+    }
+    cb(error);
+  });
+});
+
 // Copy the release files
 gulp.task('release:copy:dist', () =>
   gulp

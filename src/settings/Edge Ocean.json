@@ -284,6 +284,59 @@
       "settings": {
         "foreground": "#00BFB2"
       }
+    },
+    {
+      "name": "Markup Heading",
+      "scope": "markup.heading",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#E75E6D"
+      }
+    },
+    {
+      "name": "Markup Links",
+      "scope": "string.other.link, markup.underline.link",
+      "settings": {
+        "fontStyle": "italic underline",
+        "foreground": "#00BFB2"
+      }
+    },
+    {
+      "name": "Markup Code",
+      "scope": "markup.raw",
+      "settings": {
+        "background": "#11425C"
+      }
+    },
+    {
+      "name": "Markup Code Inline",
+      "scope": "markup.raw.inline",
+      "settings": {
+        "background": "#11425C"
+      }
+    },
+    {
+      "name": "Markup Blockquote",
+      "scope": "markup.quote",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#2A879C"
+      }
+    },
+    {
+      "name": "Markup List Bullet",
+      "scope": "markup.list.numbered.bullet, markup.list punctuation.definition.list_item",
+      "settings": {
+        "foreground": "#12D3E5"
+      }
+    },
+    {
+      "name": "Markup Table",
+      "scope": "markup.table",
+      "settings": {
+        "background": "#1FA1AD",
+        "foreground": "#12D3E5"
+      }
     }
   ]
 }

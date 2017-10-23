@@ -107,6 +107,27 @@
         "settings": {
           "foreground": "#e84855"
         }
+      },
+      {
+        "name": "Markup Italic",
+        "scope": "markup.italic",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Markup Bold",
+        "scope": "markup.bold",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "name": "Markup Bold/italic",
+        "scope": "markup.italic markup.bold | markup.bold markup.italic",
+        "settings": {
+          "fontStyle": "bold italic"
+        }
       }
     ]
   }
