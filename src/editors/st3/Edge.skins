@@ -4,7 +4,7 @@
 
       // Activation
 
-      "color_scheme": "Packages/Edge Theme/schemes/Edge Night Sky.tmTheme",
+      "color_scheme": "Packages/Edge Theme/Edge Night Sky.tmTheme",
       "theme": "Edge Night Sky.sublime-theme",
 
       // Reset
@@ -21,7 +21,7 @@
 
       // Activation
 
-      "color_scheme": "Packages/Edge Theme/schemes/Edge Serene.tmTheme",
+      "color_scheme": "Packages/Edge Theme/Edge Serene.tmTheme",
       "theme": "Edge Serene.sublime-theme",
 
       // Reset
@@ -38,7 +38,7 @@
 
       // Activation
 
-      "color_scheme": "Packages/Edge Theme/schemes/Edge Ocean.tmTheme",
+      "color_scheme": "Packages/Edge Theme/Edge Ocean.tmTheme",
       "theme": "Edge Ocean.sublime-theme",
 
       // Reset

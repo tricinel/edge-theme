@@ -3,14 +3,17 @@ import chalk from 'chalk';
 import runSequence from 'run-sequence';
 import git from 'gulp-git';
 
+import './bump';
+
 import { paths, deploy } from './config';
 
 gulp.task('release', cb => {
   runSequence(
+    'bump',
     'release:copy:dist',
     'release:copy:editors',
-    'release:prerelease',
-    // 'release:st3',
+    'release:tag',
+    'release:st3',
     error => {
       if (error) {
         console.log(
@@ -41,7 +44,7 @@ gulp.task('release:copy:editors', () =>
 );
 
 // We need to add all the releases to the
-gulp.task('release:prerelease', () => {
+gulp.task('release:tag', () => {
   /* eslint-disable global-require */
   const pkgJson = require('./../package.json');
   /* eslint-enable */
@@ -52,10 +55,12 @@ gulp.task('release:prerelease', () => {
   process.chdir('./releases/st3');
 
   return gulp
-    .src(['./*', '!.git'], { dot: true }) // We need to change this when we have VSCode support
+    .src(['./*', '!.git', '!.DS_Store'], { dot: true }) // We need to change this when we have VSCode support
     .pipe(git.add())
     .pipe(git.commit(message))
     .pipe(git.tag(version));
 });
 
-// gulp.task('release:st3', () => gulp.src());
+gulp.task('release:st3', () =>
+  git.push('origin', 'master', { args: ' --tags' })
+);

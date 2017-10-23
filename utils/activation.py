@@ -91,7 +91,7 @@ class EdgeActivateCommand(sublime_plugin.WindowCommand):
     activate_ui_theme(ui_theme)
 
   def _quick_list_to_scheme(self, index):
-    return 'Packages/Edge Theme/schemes/%s.tmTheme' % self.quick_list[index]
+    return 'Packages/Edge Theme/%s.tmTheme' % self.quick_list[index]
 
   def _quick_list_to_theme(self, index):
     return '%s.sublime-theme' % self.quick_list[index]

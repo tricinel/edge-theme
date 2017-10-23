@@ -86,3 +86,7 @@ For the Ocean theme:
 **Edge Ocean**
 
 ![Edge Ocean](https://i.imgur.com/MpXSHO2.png)
+
+## Contributing to Edge
+
+**Please check the CONTRIBUTING.md file before forking this repo!**

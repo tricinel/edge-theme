@@ -7,7 +7,7 @@ const paths = {
   },
   dist: {
     root: './',
-    schemes: './src/editors/st3/schemes',
+    schemes: './src/editors/st3/',
     themes: './src/editors/st3/',
     releases: './releases'
   },
@@ -15,8 +15,8 @@ const paths = {
 };
 
 const templates = {
-  theme: './src/templates/theme.nunjucks',
-  scheme: './src/templates/scheme.nunjucks'
+  theme: './src/templates/sublime-theme.nunjucks',
+  scheme: './src/templates/sublime-scheme.nunjucks'
 };
 
 const deploy = {
@@ -27,11 +27,12 @@ const deploy = {
         './icons/**/*.png',
         './messages/*.md',
         './CHANGELOG.md',
-        './messages.json'
+        './License.md',
+        './messages.json',
+        './utils/*.py'
       ],
       inRoot: [
-        './src/editors/st3/schemes/*.tmTheme',
-        './src/editors/st3/utils/*.py',
+        './src/editors/st3/*.tmTheme',
         './src/editors/st3/*.sublime-*',
         './src/editors/st3/E.py',
         './src/editors/st3/Icons.py',
