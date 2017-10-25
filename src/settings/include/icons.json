@@ -5,40 +5,51 @@
   "class": "icon_folder",
   "settings": ["edge_use_sidebar_folder_icons"],
   "content_margin": [7, 5],
-  "layer0.tint": [{{ toRgb(ui.colors.background) }}],
-  "layer0.opacity": 0,
-  "layer1.texture": "{{paths.assets}}/icons/{{id}}/folder.png",
-  "layer1.opacity": 1,
-  "layer2.texture": "{{paths.assets}}/icons/{{id}}/folder-expanded.png",
+  "layer0.texture": "{{paths.assets}}/icons/{{id}}/folder.png",
+  "layer0.opacity": 1,
+  "layer1.texture": "{{paths.assets}}/icons/{{id}}/folder-expanded.png",
+  "layer1.opacity": 0.0,
+  "layer2.texture": "{{paths.assets}}/icons/{{id}}/folder-hover.png",
   "layer2.opacity": 0.0,
-  "layer3.texture": "{{paths.assets}}/icons/{{id}}/folder-hover.png",
+  "layer3.texture": "{{paths.assets}}/icons/{{id}}/folder-expanded-hover.png",
   "layer3.opacity": 0.0
 },
 {
   "class": "icon_folder",
   "settings": ["!edge_use_sidebar_folder_icons"],
   "content_margin": [7, 5],
-  "layer0.opacity": 0,
-  "layer1.texture": "{{paths.assets}}/icons/{{id}}/arrow-folder-right.png",
-  "layer1.opacity": 1,
-  "layer2.texture": "{{paths.assets}}/icons/{{id}}/arrow-folder-down.png",
+  "layer0.texture": "{{paths.assets}}/icons/{{id}}/arrow-folder-right.png",
+  "layer0.opacity": 1,
+  "layer1.texture": "{{paths.assets}}/icons/{{id}}/arrow-folder-down.png",
+  "layer1.opacity": 0.0,
+  "layer2.texture": "{{paths.assets}}/icons/{{id}}/arrow-folder-right-hover.png",
   "layer2.opacity": 0.0,
-  "layer3.texture": "{{paths.assets}}/icons/{{id}}/arrow-folder-right-hover.png",
+  "layer3.texture": "{{paths.assets}}/icons/{{id}}/arrow-folder-up.png",
   "layer3.opacity": 0.0
 },
 {
   "class": "icon_folder",
   "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
-  "layer1.opacity": 0.0,
-  "layer2.opacity": 1.0,
-  "layer3.opacity": 0.0,
+  "layer0.opacity": 0.0,
+  "layer1.opacity": 1.0,
+  "layer2.opacity": 0.0,
+  "layer3.opacity": 0.0
 },
 {
   "class": "icon_folder",
   "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+  "layer0.opacity": 0.0,
+  "layer1.opacity": 0.0,
+  "layer2.opacity": 1.0,
+  "layer3.opacity": 0.0
+},
+{
+  "class": "icon_folder",
+  "parents": [{ "class": "tree_row", "attributes": ["expanded", "hover"] }],
+  "layer0.opacity": 0.0,
   "layer1.opacity": 0.0,
   "layer2.opacity": 0.0,
-  "layer3.opacity": 1.0,
+  "layer3.opacity": 1.0
 },
 // Symlink folder icon
 {
@@ -62,6 +73,12 @@
 },
 {
   "class": "icon_folder_dup",
+  "settings": ["edge_use_sidebar_folder_icons"],
+  "parents": [{"class": "tree_row", "attributes": ["expanded", "hover"] }],
+  "layer0.texture": "{{paths.assets}}/icons/{{id}}/folder-symlink-expanded-hover.png"
+},
+{
+  "class": "icon_folder_dup",
   "settings": ["!edge_use_sidebar_folder_icons"],
   "layer0.texture": "{{paths.assets}}/icons/{{id}}/arrow-folder-right.png",
   "layer0.opacity": 1.0,
@@ -78,6 +95,12 @@
   "settings": ["!edge_use_sidebar_folder_icons"],
   "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
   "layer0.texture": "{{paths.assets}}/icons/{{id}}/arrow-folder-down.png"
+},
+{
+  "class": "icon_folder_dup",
+  "settings": ["!edge_use_sidebar_folder_icons"],
+  "parents": [{"class": "tree_row", "attributes": ["expanded", "hover"] }],
+  "layer0.texture": "{{paths.assets}}/icons/{{id}}/arrow-folder-up.png"
 },
 // Opened files
 {
