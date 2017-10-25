@@ -40,9 +40,13 @@
 // Tab label
 {
   "class": "tab_label",
-  "font.face": "{{ fonts.fontFace }}",
   "fade": true,
   "fg": [{{ toRgb(ui.colors.tabs.textColor) }}]
+},
+{
+  "class": "tab_label",
+  "settings": ["edge_use_font_face"],
+  "font.face": "{{ fonts.fontFace }}"
 },
 {
   "class": "tab_label",

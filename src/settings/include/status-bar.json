@@ -17,7 +17,12 @@
 {
   "class": "label_control",
   "parents": [{"class": "status_bar"}],
-  "color": [{{ toRgb(ui.colors.textColor) }}],
+  "color": [{{ toRgb(ui.colors.textColor) }}]
+},
+{
+  "class": "label_control",
+  "settings": ["edge_use_font_face"],
+  "parents": [{"class": "status_bar"}],
   "font.face": "{{ fonts.fontFace }}"
 },
 // Status bar panel switcher button

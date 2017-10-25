@@ -13,6 +13,11 @@
   "class": "label_control",
   "parents": [{"class": "panel_control"}],
   "color": [{{ toRgb(ui.colors.textColor) }}],
+},
+{
+  "class": "label_control",
+  "settings": ["edge_use_font_face"],
+  "parents": [{"class": "panel_control"}],
   "font.face": "{{ fonts.fontFace }}"
 },
 // Mini Quick Panel

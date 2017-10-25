@@ -47,7 +47,11 @@
 // Sidebar entry
 {
   "class": "sidebar_label",
-  "color": [{{ toRgb(ui.colors.textColor) }}],
+  "color": [{{ toRgb(ui.colors.textColor) }}]
+},
+{
+  "class": "sidebar_label",
+  "settings": ["edge_use_font_face"],
   "font.face": "{{ fonts.fontFace }}"
 },
 {
