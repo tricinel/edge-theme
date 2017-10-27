@@ -1,6 +1,7 @@
 {
   "env": {
-    "node": true
+    "node": true,
+    "jest": true
   },
   "parser": "babel-eslint",
   "extends": [
@@ -16,6 +17,7 @@
     }
   },
   "rules": {
+    "no-underscore-dangle": 0,
     "import/no-extraneous-dependencies": ["error", {
       "devDependencies": true
     }],

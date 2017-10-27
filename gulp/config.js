@@ -9,6 +9,7 @@ const paths = {
     root: './',
     schemes: './src/editors/st3/',
     themes: './src/editors/st3/',
+    iterm2: './src/editors/iterm2/',
     releases: './releases'
   },
   tmp: './.tmp'
@@ -16,7 +17,8 @@ const paths = {
 
 const templates = {
   theme: './src/templates/sublime-theme.nunjucks',
-  scheme: './src/templates/sublime-scheme.nunjucks'
+  scheme: './src/templates/sublime-scheme.nunjucks',
+  iterm2: './src/templates/iterm2-scheme.nunjucks'
 };
 
 const deploy = {

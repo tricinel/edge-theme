@@ -338,5 +338,119 @@
         "foreground": "#12D3E5"
       }
     }
+  ],
+  "iterm2": [
+    {
+      "name": "Ansi 0 Color",
+      "color": "#012A40",
+      "note": "Black - Normal"
+    },
+    {
+      "name": "Ansi 1 Color",
+      "color": "#DC333C",
+      "note": "Red - Normal"
+    },
+    {
+      "name": "Ansi 10 Color",
+      "color": "#40C7BC",
+      "note": "Green - Bright"
+    },
+    {
+      "name": "Ansi 11 Color",
+      "color": "#FDCA40",
+      "note": "Yellow - Bright"
+    },
+    {
+      "name": "Ansi 12 Color",
+      "color": "#52A6F0",
+      "note": "Blue - Bright"
+    },
+    {
+      "name": "Ansi 13 Color",
+      "color": "#AE81FF",
+      "note": "Magenta - Bright"
+    },
+    {
+      "name": "Ansi 14 Color",
+      "color": "#12D3E5",
+      "note": "Cyan - Bright"
+    },
+    {
+      "name": "Ansi 15 Color",
+      "color": "#C4E1F5",
+      "note": "White - Bright"
+    },
+    {
+      "name": "Ansi 2 Color",
+      "color": "#47A025",
+      "note": "Green - Normal"
+    },
+    {
+      "name": "Ansi 3 Color",
+      "color": "#FFC642",
+      "note": "Yellow - Normal"
+    },
+    {
+      "name": "Ansi 4 Color",
+      "color": "#48BEFF",
+      "note": "Blue - Normal"
+    },
+    {
+      "name": "Ansi 5 Color",
+      "color": "#893168",
+      "note": "Magenta - Normal"
+    },
+    {
+      "name": "Ansi 6 Color",
+      "color": "#1FA1AD",
+      "note": "Cyan - Normal"
+    },
+    {
+      "name": "Ansi 7 Color",
+      "color": "#84A8C2",
+      "note": "White - Normal"
+    },
+    {
+      "name": "Ansi 8 Color",
+      "color": "#1D6185",
+      "note": "Black - Bright"
+    },
+    {
+      "name": "Ansi 9 Color",
+      "color": "#EA261B",
+      "note": "Red - Bright"
+    },
+    {
+      "name": "Background Color",
+      "color": "#012A40"
+    },
+    {
+      "name": "Bold Color",
+      "color": "#00ABE7"
+    },
+    {
+      "name": "Links Color",
+      "color": "#FFC642"
+    },
+    {
+      "name": "Cursor Color",
+      "color": "#679BBC"
+    },
+    {
+      "name": "Cursor Text Color",
+      "color": "#69C0FA"
+    },
+    {
+      "name": "Foreground Color",
+      "color": "#52A6F0"
+    },
+    {
+      "name": "Selected Text Color",
+      "color": "#012A40"
+    },
+    {
+      "name": "Selection Color",
+      "color": "#0F4F68"
+    }
   ]
 }
