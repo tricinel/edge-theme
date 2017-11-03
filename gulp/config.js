@@ -41,7 +41,8 @@ const deploy = {
         './src/editors/st3/Edge.skins',
         './src/editors/st3/*.md',
         './src/editors/st3/.supports-a-file-icon-customization',
-        './src/editors/st3/.gitignore'
+        './src/editors/st3/.gitignore',
+        './src/editors/st3/dependencies.json'
       ]
     }
   }
