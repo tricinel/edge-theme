@@ -1,7 +1,7 @@
 {
   "name": "edge-theme",
-  "version": "1.0.2",
-  "description": "Edge Theme for Sublime Text 3",
+  "version": "1.1.0",
+  "description": "Edge Theme for Sublime Text 3, iTerm2",
   "main": "gulpfile.babel.js",
   "author": "tricinel <bogdan@bogdanlazar.com>",
   "license": "MIT",
@@ -11,7 +11,6 @@
     "build:themes": "gulp build:themes",
     "build:schemes": "gulp build:schemes",
     "watch": "gulp watch",
-    "test:release": "gulp copy:release",
     "release": "gulp release",
     "test": "jest",
     "test:watch": "jest --watch"
@@ -36,20 +35,18 @@
     "gulp-data": "^1.2.1",
     "gulp-debug": "^3.1.0",
     "gulp-flatmap": "^1.0.0",
-    "gulp-git": "^2.4.2",
     "gulp-imagemin": "^3.4.0",
     "gulp-include": "^2.3.1",
     "gulp-nunjucks-render": "^2.2.1",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
+    "jest": "^21.2.1",
     "prettier": "^1.7.4",
+    "ramda": "^0.25.0",
     "run-sequence": "^2.2.0",
     "tinycolor2": "^1.4.1",
-    "yargs": "^9.0.1"
-  },
-  "dependencies": {
-    "jest": "^21.2.1",
-    "ramda": "^0.25.0"
+    "yargs": "^9.0.1",
+    "yargs-parser": "^8.0.0"
   }
 }

@@ -15,7 +15,7 @@ import { paths, templates } from './config';
 import { splitColorToRgbComponents } from './utils';
 
 gulp.task('build:schemes', ['clean:schemes'], cb => {
-  runSequence('process:schemes', 'process:iterm2', error => {
+  runSequence('process:sublime-schemes', 'process:iterm2', error => {
     if (error) {
       console.log(
         chalk.red(`There was an issue building the schemes:\n${error.message}`)
@@ -27,7 +27,7 @@ gulp.task('build:schemes', ['clean:schemes'], cb => {
   });
 });
 
-gulp.task('process:schemes', () =>
+gulp.task('process:sublime-schemes', () =>
   gulp
     .src([`${paths.src.settings}/*.json`, `!${paths.src.settings}/common.json`])
     .pipe(
@@ -35,7 +35,7 @@ gulp.task('process:schemes', () =>
         const basename = path.basename(file.path, path.extname(file.path));
 
         return gulp
-          .src(templates.scheme)
+          .src(templates.sublimeScheme)
           .pipe(
             data(() => {
               /* eslint-disable global-require */
@@ -51,7 +51,7 @@ gulp.task('process:schemes', () =>
               scheme.basename = basename;
             })
           )
-          .pipe(gulp.dest(paths.dist.schemes));
+          .pipe(gulp.dest(paths.dist.sublimetext));
       })
     )
 );

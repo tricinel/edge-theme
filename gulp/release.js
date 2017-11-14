@@ -1,81 +1,68 @@
 import gulp from 'gulp';
 import chalk from 'chalk';
 import runSequence from 'run-sequence';
-import git from 'gulp-git';
-
-import './bump';
 
 import { paths, deploy } from './config';
 
 gulp.task('release', cb => {
+  runSequence('release:copy:sublimetext', 'release:copy:iterm2', error => {
+    if (error) {
+      console.log(
+        chalk.red(
+          `There was an issue releasing your themes and schemes:\n${error.message}`
+        )
+      );
+    } else {
+      console.log(
+        chalk.green(
+          "Release copy successful! Don't forget to bump, tag and release each package as needed!"
+        )
+      );
+    }
+    cb(error);
+  });
+});
+
+gulp.task('release:copy:sublimetext', cb => {
   runSequence(
-    'bump',
-    'release:copy:dist',
-    'release:copy:editors',
-    'release:tag',
-    'release:st3',
+    'release:copy:sublimetext:main',
+    'release:copy:sublimetext:files',
     error => {
       if (error) {
         console.log(
           chalk.red(
-            `There was an issue releasing your themes and schemes:\n${error.message}`
+            `There was an issue copying the files for Sublime Text:\n${error.message}`
           )
         );
-      } else {
-        console.log(chalk.green('Release successful!'));
       }
       cb(error);
     }
   );
 });
 
-gulp.task('copy:release', cb => {
-  runSequence('release:copy:dist', 'release:copy:editors', error => {
-    if (error) {
-      console.log(
-        chalk.red(
-          `There was an issue copying the release files for your themes and schemes:\n${error.message}`
-        )
-      );
-    } else {
-      console.log(chalk.green('Release copy successful!'));
-    }
-    cb(error);
-  });
-});
-
-// Copy the release files
-gulp.task('release:copy:dist', () =>
+// Copy the main release files for Sublime Text
+gulp.task('release:copy:sublimetext:main', () =>
   gulp
-    .src(deploy.st3.files.withFolderStructure, { base: './' })
-    .pipe(gulp.dest(`${paths.dist.releases}/st3`))
+    .src(deploy.sublimetext, { base: './' })
+    .pipe(gulp.dest(`${paths.dist.releases}/sublimetext`))
 );
 
-// Copy the individual target files
-gulp.task('release:copy:editors', () =>
+// Copy the specific release files for Sublime Text
+gulp.task('release:copy:sublimetext:files', () =>
   gulp
-    .src(deploy.st3.files.inRoot)
-    .pipe(gulp.dest(`${paths.dist.releases}/st3`))
+    .src(
+      [
+        `${paths.dist.sublimetext}/**/*`,
+        `!${paths.dist.sublimetext}/**/*.{gitignore,DS_Store,version}`
+      ],
+      { dot: true }
+    )
+    .pipe(gulp.dest(`${paths.dist.releases}/sublimetext`))
 );
 
-// We need to add all the releases to the
-gulp.task('release:tag', () => {
-  /* eslint-disable global-require */
-  const pkgJson = require('./../package.json');
-  /* eslint-enable */
-  const version = `v${pkgJson.version}`;
-  const message = `Release ${version}`;
-
-  // Change the working directory
-  process.chdir('./releases/st3');
-
-  return gulp
-    .src(['./*', '!.git', '!.DS_Store'], { dot: true }) // We need to change this when we have VSCode support
-    .pipe(git.add())
-    .pipe(git.commit(message))
-    .pipe(git.tag(version));
-});
-
-gulp.task('release:st3', () =>
-  git.push('origin', 'master', { args: ' --tags' })
+// Copy the specific release files for iTerm2
+gulp.task('release:copy:iterm2', () =>
+  gulp
+    .src(`${paths.dist.iterm2}/**/*`)
+    .pipe(gulp.dest(`${paths.dist.releases}/iterm2`))
 );

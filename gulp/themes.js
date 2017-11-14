@@ -15,7 +15,7 @@ import { toRgb, toRgba, hover, darken, lighten } from './utils';
 import common from '../src/settings/common.json';
 
 gulp.task('build:themes', cb => {
-  runSequence('process:themes', error => {
+  runSequence('process:sublime-themes', error => {
     if (error) {
       console.log(
         chalk.red(`There was an issue building the themes:\n${error.message}`)
@@ -27,7 +27,7 @@ gulp.task('build:themes', cb => {
   });
 });
 
-gulp.task('process:themes', ['clean:themes'], () =>
+gulp.task('process:sublime-themes', ['clean:themes'], () =>
   gulp
     .src([`${paths.src.settings}/*.json`, `!${paths.src.settings}/common.json`])
     .pipe(
@@ -35,7 +35,7 @@ gulp.task('process:themes', ['clean:themes'], () =>
         const basename = path.basename(file.path, path.extname(file.path));
 
         return gulp
-          .src(templates.theme)
+          .src(templates.sublimeTheme)
           .pipe(
             include({
               includePaths: `${paths.src.settings}/include`
@@ -64,7 +64,7 @@ gulp.task('process:themes', ['clean:themes'], () =>
               theme.basename = basename;
             })
           )
-          .pipe(gulp.dest(paths.dist.themes));
+          .pipe(gulp.dest(paths.dist.sublimetext));
       })
     )
 );

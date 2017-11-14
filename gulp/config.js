@@ -7,8 +7,7 @@ const paths = {
   },
   dist: {
     root: './',
-    schemes: './src/editors/st3/',
-    themes: './src/editors/st3/',
+    sublimetext: './src/editors/sublimetext/',
     iterm2: './src/editors/iterm2/',
     releases: './releases'
   },
@@ -16,36 +15,13 @@ const paths = {
 };
 
 const templates = {
-  theme: './src/templates/sublime-theme.nunjucks',
-  scheme: './src/templates/sublime-scheme.nunjucks',
+  sublimeTheme: './src/templates/sublime-theme.nunjucks',
+  sublimeScheme: './src/templates/sublime-scheme.nunjucks',
   iterm2: './src/templates/iterm2-scheme.nunjucks'
 };
 
 const deploy = {
-  st3: {
-    files: {
-      withFolderStructure: [
-        './assets/icons/**/*.png',
-        './icons/**/*.png',
-        './messages/*.md',
-        './CHANGELOG.md',
-        './License.md',
-        './messages.json',
-        './utils/*.py'
-      ],
-      inRoot: [
-        './src/editors/st3/*.tmTheme',
-        './src/editors/st3/*.sublime-*',
-        './src/editors/st3/E.py',
-        './src/editors/st3/Icons.py',
-        './src/editors/st3/Edge.skins',
-        './src/editors/st3/*.md',
-        './src/editors/st3/.supports-a-file-icon-customization',
-        './src/editors/st3/.gitignore',
-        './src/editors/st3/dependencies.json'
-      ]
-    }
-  }
+  sublimetext: ['./assets/icons/**/*.png', './icons/**/*.png']
 };
 
 export { paths, templates, deploy };

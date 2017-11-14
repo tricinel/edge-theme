@@ -16,7 +16,7 @@
 * `yarn build:themes` will build the theme files
 * `yarn build:schemes` will build the scheme files
 * `yarn build` will build everything
-* `yarn test:release` will copy the release files into `release/` in order for you to see the changes reflected in the editor's UI.
+* `yarn release` will copy the release files into `release/` in order for you to see the changes reflected in the editor's UI.
 
 ### Files and folder structure
 
@@ -29,12 +29,13 @@
 │       └── serene
 ├── gulp
 ├── icons
-├── messages
 ├── releases
-│   └── st3
+│   └── iterm2
+│   └── sublimetext
 ├── src
 │   ├── editors
-│   │   └── st3
+│   │   └── iterm2
+│   │   └── sublimetext
 │   ├── settings
 │   │   ├── include
 │   │   ├── Edge Night Sky.json
@@ -42,15 +43,14 @@
 │   │   ├── Edge Serene.json
 │   │   └── common.json
 │   └── templates
+│       ├── iterm2-scheme.nunjucks
 │       ├── sublime-scheme.nunjucks
 │       └── sublime-theme.nunjucks
-├── utils
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── Edge Theme.sketch
 ├── README.md
 ├── gulpfile.babel.js
-├── messages.json
 ├── package.json
 └── yarn.lock
 ```
@@ -58,13 +58,11 @@
 * `assets/icons` contains the UI icons for the various themes
 * `gulp` contains the tasks for development, e.g. building the themes
 * `icons` contains the file_type icons. Please note that Edge for Sublime Text 3 supports [A File Icon](https://github.com/ihodev/a-file-icon) package.
-* `messages` contains the install/update messages
 * `releases/` contains the release files for each individual editor. Each editor has its own repo.
 * `src` contains the source files, as follows:
 * `src/editors` -> editor-specific files
 * `src/settings` -> the theme settings. Most of the work should go in here.
 * `src/templates` -> the templates for each of the files that need to come out in the release.
-* `utils` -> some py files to make things easier for the end user when installing/activating the themes
 
 ### Editor specific
 
@@ -73,12 +71,32 @@
 There's a small workflow you can apply to make modifications on the themes and have them reflect on the Sublime editor UI.
 
 1. `git clone git@github.com:tricinel/edge-theme.git`
-2. `cd edge-theme/releases && mkdir st3`
+2. `cd edge-theme/releases && mkdir sublimetext`
 3. `cd ..`
 4. `yarn build`
 5. `cd <path-to-sublime-text-3-packages> && rm -rf Edge\ Theme #if you have the theme installed`
-6. `ln -s <path-to-edge-theme-repo>/releases/st3 Edge Theme`
+6. `ln -s <path-to-edge-theme-repo>/releases/sublimetext Edge Theme`
 7. `cd <path-to-edge-theme-repo>`
 8. Make changes
 9. `yarn build`
 10. `yarn test:release`
+
+#### iTerm2
+
+There's no workflow you can apply to make modifications on the color schemes and have them immediately reflect on the iTerm2 UI. However, you can still use the `release` task to generate the color schemes that you can then re-import into iTerm2.
+
+1. `git clone git@github.com:tricinel/edge-theme.git`
+2. `cd edge-theme/releases && mkdir iterm2`
+3. `cd ..`
+4. Make changes
+5. `yarn build`
+6. `yarn test:release`
+7. Launch iTerm 2.
+8. Click on iTerm2 menu title
+9. Select the **Preferences** option
+10. Select **Profiles**
+11. Navigate to **Colors** tab
+12. Click on **Color Presets**
+13. Click on **Import**
+14. Select the `.itermcolors` files of the schemes from `<path-to-edge-theme-repo>/releases/iterm2`
+15. Click on **Color Presets** and choose a color scheme that you previously imported.
