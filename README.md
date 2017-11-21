@@ -75,11 +75,11 @@ There's a small workflow you can apply to make modifications on the themes and h
 3. `cd ..`
 4. `yarn build`
 5. `cd <path-to-sublime-text-3-packages> && rm -rf Edge\ Theme #if you have the theme installed`
-6. `ln -s <path-to-edge-theme-repo>/releases/sublimetext Edge Theme`
+6. `ln -s <path-to-edge-theme-repo>/releases/sublimetext Edge\ Theme`
 7. `cd <path-to-edge-theme-repo>`
 8. Make changes
 9. `yarn build`
-10. `yarn test:release`
+10. `yarn release`
 
 #### iTerm2
 
@@ -90,7 +90,7 @@ There's no workflow you can apply to make modifications on the color schemes and
 3. `cd ..`
 4. Make changes
 5. `yarn build`
-6. `yarn test:release`
+6. `yarn release`
 7. Launch iTerm 2.
 8. Click on iTerm2 menu title
 9. Select the **Preferences** option
