@@ -12,6 +12,7 @@
     "build:schemes": "gulp build:schemes",
     "watch": "gulp watch",
     "release": "gulp release",
+    "bump": "gulp bump",
     "test": "jest",
     "test:watch": "jest --watch"
   },
