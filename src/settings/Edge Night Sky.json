@@ -1,9 +1,12 @@
 {
   "name": "Edge Night Sky",
   "uuid": "4dff426f-c96c-4e3b-834c-97a69a0c925d",
-  "semanticClass": "edge.nightsky",
+  "semanticClass": "edge.theme.nightsky",
   "id": "night-sky",
   "ui": {
+    "options": {
+      "backgroundType": "dark"
+    },
     "settings": {
       "background": "#081A20",
       "caret": "#F3D3BD",
@@ -422,6 +425,192 @@
     {
       "name": "Selection Color",
       "color": "#172A3A"
+    }
+  ],
+  "vim": [
+    {
+      "name": "Comment",
+      "settings": {
+        "guifg": "#27667D",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Constant",
+      "settings": {
+        "guifg": "#FF8141",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Boolean",
+      "settings": {
+        "guifg": "#FF8141",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Number",
+      "settings": {
+        "guifg": "#AE81FF",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Float",
+      "settings": {
+        "guifg": "#AE81FF",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Character",
+      "settings": {
+        "guifg": "#ECC6B8",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Identifier",
+      "settings": {
+        "guifg": "#FB3640",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Function",
+      "settings": {
+        "guifg": "#5DD39E",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "String",
+      "settings": {
+        "guifg": "#ECC6B8",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Statement",
+      "settings": {
+        "guifg": "#FB3640",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "PreProc",
+      "settings": {
+        "guifg": "#AD83D9",
+        "guibg": "NONE",
+        "gui": "italic"
+      }
+    },
+    {
+      "name": "Type",
+      "settings": {
+        "guifg": "#FF8141",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Underlined",
+      "settings": {
+        "guifg": "#5DD39E",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Error",
+      "settings": {
+        "guifg": "#ECC6B8",
+        "guibg": "#FB3640",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Todo",
+      "settings": {
+        "guifg": "#27667D",
+        "guibg": "#ECC6B8",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Special",
+      "settings": {
+        "guifg": "#AD83D9",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "xmlTag",
+      "settings": {
+        "guifg": "#FB3640",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "DiffAdd",
+      "settings": {
+        "guifg": "#081A20",
+        "guibg": "#47A025",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "DiffChange",
+      "settings": {
+        "guifg": "#081A20",
+        "guibg": "#F9DC5C",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "DiffDelete",
+      "settings": {
+        "guifg": "#081A20",
+        "guibg": "#E84855",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "DiffText",
+      "settings": {
+        "guifg": "#081A20",
+        "guibg": "#48BEFF",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "ErrorMsg",
+      "settings": {
+        "guifg": "#FB3640",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "WarningMsg",
+      "settings": {
+        "guifg": "#FF8141",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
     }
   ]
 }

@@ -1,5 +1,6 @@
 import R from 'ramda';
 import tinycolor from 'tinycolor2';
+import x256 from 'x256';
 
 const toColor = color => tinycolor(color);
 const getRgba = color => color.toRgb();
@@ -38,4 +39,21 @@ const splitColorToRgbComponents = R.compose(
   toColor
 );
 
-export { toRgb, toRgba, hover, darken, lighten, splitColorToRgbComponents };
+const transformToColorCode = hex =>
+  toColor(hex).isValid() ? R.compose(x256, toRgb)(hex) : hex;
+
+const transformToCtermKey = key => key.replace('gui', 'cterm');
+
+const transformFileName = name => name.replace(/\s/g, '').toLowerCase();
+
+export {
+  toRgb,
+  toRgba,
+  hover,
+  darken,
+  lighten,
+  splitColorToRgbComponents,
+  transformToColorCode,
+  transformToCtermKey,
+  transformFileName
+};

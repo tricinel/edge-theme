@@ -2,7 +2,10 @@ import {
   toRgb,
   toRgba,
   darken,
-  splitColorToRgbComponents
+  splitColorToRgbComponents,
+  transformToColorCode,
+  transformToCtermKey,
+  transformFileName
 } from '../../gulp/utils';
 
 const color = '#fc6821';
@@ -35,4 +38,25 @@ test('Split a color into RGB components for iterm2', () => {
       value: 0.12941176470588237
     }
   ]);
+});
+
+test('Get the nearest xterm 256 color code for a hex code', () => {
+  expect(transformToColorCode(color)).toEqual(202);
+  expect(transformToColorCode('NONE')).toEqual('NONE');
+});
+
+test('Get the cterm key for the corresponding gui key', () => {
+  expect(transformToCtermKey('gui')).toEqual('cterm');
+  expect(transformToCtermKey('guibg')).toEqual('ctermbg');
+  expect(transformToCtermKey('guifg')).toEqual('ctermfg');
+  expect(transformToCtermKey('someotherkey')).toEqual('someotherkey');
+});
+
+test('Get the filename with no spaces or capital letters', () => {
+  expect(transformFileName('file name with spaces')).toEqual(
+    'filenamewithspaces'
+  );
+  expect(transformFileName('FileName with Spaces')).toEqual(
+    'filenamewithspaces'
+  );
 });

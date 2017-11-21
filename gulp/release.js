@@ -5,22 +5,27 @@ import runSequence from 'run-sequence';
 import { paths, deploy } from './config';
 
 gulp.task('release', cb => {
-  runSequence('release:copy:sublimetext', 'release:copy:iterm2', error => {
-    if (error) {
-      console.log(
-        chalk.red(
-          `There was an issue releasing your themes and schemes:\n${error.message}`
-        )
-      );
-    } else {
-      console.log(
-        chalk.green(
-          "Release copy successful! Don't forget to bump, tag and release each package as needed!"
-        )
-      );
+  runSequence(
+    'release:copy:sublimetext',
+    'release:copy:iterm2',
+    'release:copy:vim',
+    error => {
+      if (error) {
+        console.log(
+          chalk.red(
+            `There was an issue releasing your themes and schemes:\n${error.message}`
+          )
+        );
+      } else {
+        console.log(
+          chalk.green(
+            "Release copy successful! Don't forget to bump, tag and release each package as needed!"
+          )
+        );
+      }
+      cb(error);
     }
-    cb(error);
-  });
+  );
 });
 
 gulp.task('release:copy:sublimetext', cb => {
@@ -65,4 +70,11 @@ gulp.task('release:copy:iterm2', () =>
   gulp
     .src(`${paths.dist.iterm2}/**/*`)
     .pipe(gulp.dest(`${paths.dist.releases}/iterm2`))
+);
+
+// Copy the specific release files for iTerm2
+gulp.task('release:copy:vim', () =>
+  gulp
+    .src(`${paths.dist.vim}/**/*`)
+    .pipe(gulp.dest(`${paths.dist.releases}/vim`))
 );

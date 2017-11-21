@@ -1,0 +1,51 @@
+" {{ name }} Vim color scheme
+"
+" Maintainer:  Bogdan Lazar
+" License:    MIT
+
+set background={{ ui.options.backgroundType }}
+hi clear
+if exists("syntax_on")
+  syntax reset
+endif
+let g:colors_name = "{{ transformFileName(name) }}"
+
+if has("gui_running")
+  hi Normal guibg={{ ui.settings.background }} guifg={{ ui.settings.foreground }} gui=NONE
+  hi Cursor guibg={{ ui.settings.caret }}
+  hi CursorLine guibg={{ ui.settings.lineHighlight }}
+  hi LineNr guifg={{ ui.settings.lineHighlight }}
+  hi Directory guifg={{ ui.settings.foreground }} gui=bold
+  hi Search guifg={{ ui.settings.foreground }} guibg={{ ui.settings.selection }} gui=NONE
+  hi Pmenu guifg={{ ui.colors.textColor }} guibg={{ ui.colors.highlight }} gui=NONE
+  hi PmenuSel guifg={{ ui.colors.textColor }} guibg={{ ui.colors.textHighlightColor }} gui=NONE
+  hi PMenuSbar guibg={{ ui.settings.foreground }} gui=NONE
+  hi PMenuThumb guibg={{ ui.settings.background }} gui=NONE
+
+  {% for item in vim %}
+  hi {{ item.name }}{% for key, value in item.settings %} {{ key }}={{ value }}{% endfor %}
+  {% endfor %}
+else
+  hi Normal ctermbg={{ transformToColorCode(ui.settings.background) }} ctermfg={{ transformToColorCode(ui.settings.foreground) }} cterm=NONE
+  hi Cursor ctermbg={{ transformToColorCode(ui.settings.caret) }}
+  hi CursorLine ctermbg={{ transformToColorCode(ui.settings.lineHighlight) }}
+  hi LineNr ctermfg={{ transformToColorCode(ui.settings.lineHighlight) }}
+  hi Directory ctermfg={{ transformToColorCode(ui.settings.foreground) }} cterm=bold
+  hi Search ctermfg={{ transformToColorCode(ui.settings.foreground) }} ctermbg={{ transformToColorCode(ui.settings.selection) }} cterm=NONE
+  hi Pmenu ctermfg={{ transformToColorCode(ui.colors.textColor) }} ctermbg={{ transformToColorCode(ui.colors.highlight) }} cterm=NONE
+  hi PmenuSel ctermfg={{ transformToColorCode(ui.colors.textColor) }} ctermbg={{ transformToColorCode(ui.colors.textHighlightColor) }} cterm=NONE
+  hi PMenuSbar ctermbg={{ transformToColorCode(ui.settings.foreground) }} cterm=NONE
+  hi PMenuThumb ctermbg={{ transformToColorCode(ui.settings.background) }} cterm=NONE
+
+  {% for item in vim %}
+  hi {{ item.name }}{% for key, value in item.settings %} {{ transformToCtermKey(key) }}={{ transformToColorCode(value) }}{% endfor %}
+  {% endfor %}
+endif
+
+hi! link xmlTagName xmlTag
+hi! link xmlEndTag xmlTag
+hi! link xmlArg xmlTag
+hi! link htmlTag xmlTag
+hi! link htmlTagName xmlTagName
+hi! link htmlEndTag xmlEndTag
+hi! link htmlArg xmlArg
