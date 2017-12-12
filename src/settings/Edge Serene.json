@@ -25,9 +25,9 @@
       "tabs": {
         "background": "#FDF6E3",
         "tab": "#FDF6E3",
-        "active": "#EAE1CB",
+        "active": "#F2EAD5",
         "textColor": "#805330",
-        "textColorActive": "#805330"
+        "textColorActive": "#D5494E"
       }
     }
   },
