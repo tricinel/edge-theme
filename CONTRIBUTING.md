@@ -8,7 +8,7 @@ I've designed Edge with a multi-editor process in mind, so that the same theme c
 
 ## Filing issues
 
-Please [check the existing issues](https://github.com/mozilla/localForage/issues) to make sure your issue hasn't already been filed.
+Please [check the existing issues](https://github.com/tricinel/edge-theme/issues) to make sure your issue hasn't already been filed.
 
 If you have a bug to report, please file it.
 
