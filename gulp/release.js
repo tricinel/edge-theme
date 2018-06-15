@@ -13,7 +13,9 @@ gulp.task('release', cb => {
       if (error) {
         console.log(
           chalk.red(
-            `There was an issue releasing your themes and schemes:\n${error.message}`
+            `There was an issue releasing your themes and schemes:\n${
+              error.message
+            }`
           )
         );
       } else {
@@ -36,7 +38,9 @@ gulp.task('release:copy:sublimetext', cb => {
       if (error) {
         console.log(
           chalk.red(
-            `There was an issue copying the files for Sublime Text:\n${error.message}`
+            `There was an issue copying the files for Sublime Text:\n${
+              error.message
+            }`
           )
         );
       }

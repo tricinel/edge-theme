@@ -5,7 +5,12 @@ import x256 from 'x256';
 const toColor = color => tinycolor(color);
 const getRgba = color => color.toRgb();
 
-const toRgb = R.compose(R.values, R.pick(['r', 'g', 'b']), getRgba, toColor);
+const toRgb = R.compose(
+  R.values,
+  R.pick(['r', 'g', 'b']),
+  getRgba,
+  toColor
+);
 
 const toRgba = (hex, alpha) => R.append(alpha, toRgb(hex));
 
@@ -26,7 +31,7 @@ const transformToXrdb = R.curry((fn, obj) =>
 const splitColorToRgbComponents = R.compose(
   transformToXrdb(k =>
     R.compose(
-      R.concat(R.__, ' Component'),
+      R.concat(R.__, ' Component'), // eslint-disable-line no-underscore-dangle
       R.cond([
         [R.equals('r'), R.always('Red')],
         [R.equals('g'), R.always('Green')],
@@ -40,7 +45,12 @@ const splitColorToRgbComponents = R.compose(
 );
 
 const transformToColorCode = hex =>
-  toColor(hex).isValid() ? R.compose(x256, toRgb)(hex) : hex;
+  toColor(hex).isValid()
+    ? R.compose(
+        x256,
+        toRgb
+      )(hex)
+    : hex;
 
 const transformToCtermKey = key => key.replace('gui', 'cterm');
 
