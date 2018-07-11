@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  {% for item in scheme %}
+  <key>{{ item.name }}</key>
+  <dict>
+    {% for c in splitColorToRgbComponents(item.color) %}
+    <key>{{ c.key }}</key>
+    <real>{{ c.value }}</real>
+    {% endfor %}
+  </dict>
+  {% endfor %}
+</dict>
+</plist>

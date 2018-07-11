@@ -1,0 +1,21 @@
+{
+  {% for theme in themes -%}
+  "{{ theme }}": {
+    "Preferences": {
+
+      // Activation
+
+      "color_scheme": "Packages/{{ package.name }}/{{ theme }}.tmTheme",
+      "theme": "{{ theme }}.sublime-theme",
+
+      // Reset
+
+      "edge_sidebar_font_small": false,
+      "edge_sidebar_font_normal": false,
+      "edge_sidebar_font_large": false,
+      "edge_sidebar_font_xlarge": false,
+      "edge_use_sidebar_icons": false
+    }
+  }{% if not loop.last %},{% endif %}
+  {% endfor %}
+}

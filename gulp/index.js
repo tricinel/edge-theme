@@ -1,10 +1,12 @@
 import './build';
 import './clean';
-import './schemes';
-import './themes';
-import './bump';
 import './watch';
-import './release';
+import './a11y';
+
+import './common';
+import './sublime-text';
+import './iterm2';
+import './vim';
 
 // export default script
 export default ['build'];

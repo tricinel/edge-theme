@@ -1,0 +1,51 @@
+" {{ name }} Vim color scheme
+"
+" Maintainer:  Bogdan Lazar
+" License:    MIT
+
+set background={{ backgroundType }}
+hi clear
+if exists("syntax_on")
+  syntax reset
+endif
+let g:colors_name = "{{ transformFileName(name) }}"
+
+if has("gui_running")
+  hi Normal guibg={{ scheme.background }} guifg={{ scheme.foreground }} gui=NONE
+  hi Cursor guibg={{ scheme.caret }}
+  hi CursorLine guibg={{ scheme.highlight }}
+  hi LineNr guifg={{ scheme.highlight }}
+  hi Directory guifg={{ scheme.foreground }} gui=bold
+  hi Search guifg={{ scheme.foreground }} guibg={{ scheme.selection }} gui=NONE
+  hi Pmenu guifg={{ ui.colors.textColor }} guibg={{ ui.colors.highlight }} gui=NONE
+  hi PmenuSel guifg={{ ui.colors.textColor }} guibg={{ ui.colors.textHighlightColor }} gui=NONE
+  hi PMenuSbar guibg={{ scheme.foreground }} gui=NONE
+  hi PMenuThumb guibg={{ scheme.background }} gui=NONE
+
+  {% for item in vim %}
+  hi {{ item.name }}{% for key, value in item.colors %} {{ key }}={{ value }}{% endfor %}
+  {% endfor %}
+else
+  hi Normal ctermbg={{ transformToColorCode(scheme.background) }} ctermfg={{ transformToColorCode(scheme.foreground) }} cterm=NONE
+  hi Cursor ctermbg={{ transformToColorCode(scheme.caret) }}
+  hi CursorLine ctermbg={{ transformToColorCode(scheme.highlight) }}
+  hi LineNr ctermfg={{ transformToColorCode(scheme.highlight) }}
+  hi Directory ctermfg={{ transformToColorCode(scheme.foreground) }} cterm=bold
+  hi Search ctermfg={{ transformToColorCode(scheme.foreground) }} ctermbg={{ transformToColorCode(scheme.selection) }} cterm=NONE
+  hi Pmenu ctermfg={{ transformToColorCode(ui.colors.textColor) }} ctermbg={{ transformToColorCode(ui.colors.highlight) }} cterm=NONE
+  hi PmenuSel ctermfg={{ transformToColorCode(ui.colors.textColor) }} ctermbg={{ transformToColorCode(ui.colors.textHighlightColor) }} cterm=NONE
+  hi PMenuSbar ctermbg={{ transformToColorCode(scheme.foreground) }} cterm=NONE
+  hi PMenuThumb ctermbg={{ transformToColorCode(scheme.background) }} cterm=NONE
+
+  {% for item in vim %}
+  hi {{ item.name }}{% for key, value in item.settings %} {{ transformToCtermKey(key) }}={{ transformToColorCode(value) }}{% endfor %}
+  {% endfor %}
+endif
+
+hi! link xmlTagName xmlTag
+hi! link xmlEndTag xmlTag
+hi! link xmlArg xmlTag
+hi! link htmlTag xmlTag
+hi! link htmlTagName xmlTagName
+hi! link htmlEndTag xmlEndTag
+hi! link htmlArg xmlArg

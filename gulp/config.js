@@ -1,29 +1,15 @@
 const paths = {
   src: {
     root: './src',
-    settings: './src/settings',
-    templates: './src/templates',
+    config: './src/config',
     editors: './src/editors'
   },
-  dist: {
-    root: './',
-    sublimetext: './src/editors/sublimetext/',
-    iterm2: './src/editors/iterm2/',
-    vim: './src/editors/vim/',
-    releases: './releases'
-  },
+  dist: './dist',
   tmp: './.tmp'
 };
 
-const templates = {
-  sublimeTheme: './src/templates/sublime-theme.nunjucks',
-  sublimeScheme: './src/templates/sublime-scheme.nunjucks',
-  iterm2: './src/templates/iterm2-scheme.nunjucks',
-  vim: './src/templates/vim-scheme.nunjucks'
-};
+const editors = ['sublime-text', 'iterm2', 'vim'];
 
-const deploy = {
-  sublimetext: ['./assets/icons/**/*.png', './icons/**/*.png']
-};
+const themes = ['edge-night-sky', 'edge-ocean', 'edge-serene'];
 
-export { paths, templates, deploy };
+export { paths, editors, themes };

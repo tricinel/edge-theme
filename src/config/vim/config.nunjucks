@@ -1,0 +1,199 @@
+{
+  "name": "{{ name }}",
+  "backgroundType": "{{ backgroundType }}",
+  "scheme": {
+    "background": "{{ colors.backgrounds.background }}",
+    "foreground": "{{ colors.backgrounds.foreground }}",
+    "caret": "{{ colors.text.caret }}",
+    "highlight": "{{ colors.backgrounds.highlight }}",
+    "textColor": "{{ colors.text.default }}",
+    "textHighlightColor": "{{ colors.text.caret }}",
+    "selection": "{{ colors.backgrounds.selection }}"
+  },
+  "colors": [
+    {
+      "name": "Comment",
+      "settings": {
+        "guifg": "{{ colors.text.contrast.light }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Constant",
+      "settings": {
+        "guifg": "{{ colors.text.accents.orange }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Boolean",
+      "settings": {
+        "guifg": "{{ colors.text.accents.orange }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Number",
+      "settings": {
+        "guifg": "{{ colors.text.accents.indigo }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Float",
+      "settings": {
+        "guifg": "{{ colors.text.accents.indigo }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Character",
+      "settings": {
+        "guifg": "{{ colors.text.caret }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Identifier",
+      "settings": {
+        "guifg": "{{ colors.text.accents.red }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Function",
+      "settings": {
+        "guifg": "{{ colors.text.accents.green }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "String",
+      "settings": {
+        "guifg": "{{ colors.text.caret }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Statement",
+      "settings": {
+        "guifg": "{{ colors.text.accents.red }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "PreProc",
+      "settings": {
+        "guifg": "{{ colors.text.accents.indigo }}",
+        "guibg": "NONE",
+        "gui": "italic"
+      }
+    },
+    {
+      "name": "Type",
+      "settings": {
+        "guifg": "{{ colors.text.accents.orange }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Underlined",
+      "settings": {
+        "guifg": "{{ colors.text.accents.green }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Error",
+      "settings": {
+        "guifg": "{{ colors.text.caret }}",
+        "guibg": "{{ colors.text.accents.red }}",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Todo",
+      "settings": {
+        "guifg": "{{ colors.text.contrast.light }}",
+        "guibg": "{{ colors.text.caret }}",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "Special",
+      "settings": {
+        "guifg": "{{ colors.text.accents.indigo }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "xmlTag",
+      "settings": {
+        "guifg": "{{ colors.text.accents.red }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "DiffAdd",
+      "settings": {
+        "guifg": "{{ colors.backgrounds.background }}",
+        "guibg": "{{ colors.text.accents.green }}",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "DiffChange",
+      "settings": {
+        "guifg": "{{ colors.backgrounds.background }}",
+        "guibg": "{{ colors.text.accents.yellow }}",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "DiffDelete",
+      "settings": {
+        "guifg": "{{ colors.backgrounds.background }}",
+        "guibg": "{{ colors.text.accents.red }}",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "DiffText",
+      "settings": {
+        "guifg": "{{ colors.backgrounds.background }}",
+        "guibg": "{{ colors.text.accents.blue }}",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "ErrorMsg",
+      "settings": {
+        "guifg": "{{ colors.text.accents.red }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    },
+    {
+      "name": "WarningMsg",
+      "settings": {
+        "guifg": "{{ colors.text.accents.orange }}",
+        "guibg": "NONE",
+        "gui": "NONE"
+      }
+    }
+  ]
+}
