@@ -46,7 +46,8 @@ gulp.task('create:sublime-text', () => {
               ext: 'tmTheme',
               basename: settings[theme].name,
               src: `${path}/scheme.nunjucks`,
-              dest: `${paths.dist}/sublime-text`
+              dest: `${paths.dist}/sublime-text`,
+              extraData: { ...common }
             }),
             createFile({
               file,
@@ -54,7 +55,8 @@ gulp.task('create:sublime-text', () => {
               basename: settings[theme].name,
               includePaths: `${path}/theme`,
               src: `${path}/theme.nunjucks`,
-              dest: `${paths.dist}/sublime-text`
+              dest: `${paths.dist}/sublime-text`,
+              extraData: { ...common }
             }),
             createFile({
               file,
@@ -64,7 +66,7 @@ gulp.task('create:sublime-text', () => {
               dest: `${paths.dist}/sublime-text`,
               extraData: {
                 themes: themeNames,
-                package: common.package
+                ...common
               }
             })
           )
