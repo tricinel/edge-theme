@@ -3,8 +3,8 @@ export default {
     backgrounds: {
       background: '#011638',
       foreground: '#52a6f0',
-      highlight: '#0f4f68',
-      selection: '#265a63'
+      highlight: '#0c2a59',
+      selection: '#0d3d45'
     },
     text: {
       default: '#52a6f0',
@@ -27,7 +27,8 @@ export default {
         purple: '#9792e3',
         red: '#e7616f',
         teal: '#00bfb2',
-        yellow: '#ffc642'
+        yellow: '#ffc642',
+        white: '#99c7f0'
       }
     },
     tabs: {
@@ -42,7 +43,8 @@ export default {
       }
     },
     borders: {
-      color: '#14435c'
+      color: '#14435c',
+      focus: '#679bbc'
     },
     scope: {
       comment: '#679bbc',

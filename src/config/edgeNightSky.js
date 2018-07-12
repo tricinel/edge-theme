@@ -43,7 +43,8 @@ export default {
       }
     },
     borders: {
-      color: '#414856'
+      color: '#414856',
+      focus: '#358aa9'
     },
     scope: {
       comment: '#358aa9',

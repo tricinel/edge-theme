@@ -29,6 +29,8 @@ const toRgb = compose(
 
 const toRgba = (hex, alpha) => append(alpha, toRgb(hex));
 
+const toHex = color => toColor(color).toHexString();
+
 const darken = (hex, amount = 20) => toRgb(toColor(hex).darken(amount));
 
 const lighten = (hex, amount = 20) => toRgb(toColor(hex).lighten(amount));
@@ -72,6 +74,7 @@ const transformToCtermKey = key => key.replace('gui', 'cterm');
 export {
   toRgb,
   toRgba,
+  toHex,
   hover,
   darken,
   lighten,

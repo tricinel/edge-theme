@@ -12,14 +12,14 @@ const settings = require(`../src/config/settings.js`);
 
 const transformFileName = name => name.replace(/\s/g, '').toLowerCase();
 
+const editorPath = `${paths.src.config}/vim`;
+
 gulp.task('copy:vim');
 
-gulp.task('create:vim', ['clean:tmp'], () => {
+gulp.task('create:vim', () => {
   themes.forEach(theme => {
-    const path = `${paths.src.config}/vim`;
-
     gulp
-      .src(`${path}/config.nunjucks`)
+      .src(`${editorPath}/config.nunjucks`)
       .pipe(
         nunjucksRender({
           ext: '.json',
@@ -36,7 +36,7 @@ gulp.task('create:vim', ['clean:tmp'], () => {
             file,
             ext: 'vim',
             basename: transformFileName(settings[theme].name),
-            src: `${path}/scheme.nunjucks`,
+            src: `${editorPath}/scheme.nunjucks`,
             dest: `${paths.dist}/vim`,
             extraData: { transformFileName }
           })

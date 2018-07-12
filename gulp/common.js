@@ -20,7 +20,7 @@ gulp.task('create:common', () => {
           ext: 'md',
           basename: 'CONTRIBUTING',
           src: `${paths.src.config}/CONTRIBUTING.nunjucks`,
-          dest: `${paths.tmp}/${editor}`,
+          dest: `${paths.dist}/${editor}`,
           extraData: {
             themes: themeNames
           }

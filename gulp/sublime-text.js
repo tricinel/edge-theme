@@ -16,6 +16,8 @@ const themeNames = Object.values(settings).reduce(
   []
 );
 
+const editorPath = `${paths.src.config}/sublime-text`;
+
 gulp.task('copy:sublime-text', () =>
   gulp
     .src(['./assets/icons/**/*.png', './icons/**/*.png'], { base: './' })
@@ -24,12 +26,11 @@ gulp.task('copy:sublime-text', () =>
 
 gulp.task('create:sublime-text', () => {
   themes.forEach(theme => {
-    const path = `${paths.src.config}/sublime-text`;
-
     gulp
-      .src(`${path}/config.nunjucks`)
+      .src(`${editorPath}/config.nunjucks`)
       .pipe(
         nunjucksRender({
+          path: paths.src.config,
           ext: '.json',
           data: {
             ...common,
@@ -45,7 +46,7 @@ gulp.task('create:sublime-text', () => {
               file,
               ext: 'tmTheme',
               basename: settings[theme].name,
-              src: `${path}/scheme.nunjucks`,
+              src: `${editorPath}/scheme.nunjucks`,
               dest: `${paths.dist}/sublime-text`,
               extraData: { ...common }
             }),
@@ -53,8 +54,8 @@ gulp.task('create:sublime-text', () => {
               file,
               ext: 'sublime-theme',
               basename: settings[theme].name,
-              includePaths: `${path}/theme`,
-              src: `${path}/theme.nunjucks`,
+              includePaths: `${editorPath}/theme`,
+              src: `${editorPath}/theme.nunjucks`,
               dest: `${paths.dist}/sublime-text`,
               extraData: { ...common }
             }),
@@ -62,7 +63,7 @@ gulp.task('create:sublime-text', () => {
               file,
               ext: 'skins',
               basename: common.package.shortName,
-              src: `${path}/skins.nunjucks`,
+              src: `${editorPath}/skins.nunjucks`,
               dest: `${paths.dist}/sublime-text`,
               extraData: {
                 themes: themeNames,

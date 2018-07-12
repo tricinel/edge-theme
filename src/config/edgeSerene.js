@@ -27,7 +27,8 @@ export default {
         purple: '#562ec2',
         red: '#da2731',
         teal: '#187d86',
-        yellow: '#9e6400'
+        yellow: '#9e6400',
+        white: '#757169'
       }
     },
     tabs: {
@@ -42,7 +43,8 @@ export default {
       }
     },
     borders: {
-      color: '#414856'
+      color: '#ddc990',
+      focus: '#849292'
     },
     scope: {
       comment: '#717171',

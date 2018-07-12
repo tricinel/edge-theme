@@ -14,7 +14,8 @@ const createFile = ({
   src,
   dest,
   includePaths = '',
-  extraData = {}
+  extraData = {},
+  templatePath = '.'
 }) =>
   gulp
     .src(src)
@@ -28,6 +29,7 @@ const createFile = ({
     )
     .pipe(
       nunjucksRender({
+        path: templatePath,
         ext: `.${ext}`
       })
     )
