@@ -1,0 +1,47 @@
+{
+  "name": "edge",
+  "displayName": "Edge Theme",
+  "description": "A superb theme for your coding needs in {{ themes | length }} variants",
+  "version": "1.0.0",
+  "publisher": "bogdanlazar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tricinel/edge-theme-vscode"
+  },
+  "keywords": [
+    "theme",
+    "dark theme",
+    "light theme",
+    "edge",
+    "night sky",
+    "ocean",
+    "serene",
+    "accessible theme"
+  ],
+  "scripts": {
+    "publish": "vsce publish"
+  },
+  "galleryBanner": {
+    "color": "#081a20",
+    "theme": "light"
+  },
+  "engines": {
+    "vscode": "^1.17.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "icon": "edge-icon.png",
+  "contributes": {
+    "themes": [
+      {% for theme in themes -%}
+      {
+        "label": "{{ theme.name }}",
+        "uiTheme": "vs{% if theme.backgroundType == 'dark' %}-dark{% endif %}",
+        "path": "./{{ theme.name }}.json"
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+}
