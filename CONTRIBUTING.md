@@ -25,7 +25,4 @@ If you'd like to contribute to Edge, it's as simple as opening a pull request on
 - Sublime Text 3
 - iTerm2
 - vim
-
-### Upcoming editor support
-
 - VSCode
