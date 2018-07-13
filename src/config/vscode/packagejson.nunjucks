@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/tricinel/edge-theme-vscode"
   },
+  "bugs": {
+    "url": "https://github.com/tricinel/edge-theme-vscode/issues"
+  },
   "keywords": [
     "theme",
     "dark theme",
