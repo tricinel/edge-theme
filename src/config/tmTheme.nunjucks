@@ -308,6 +308,41 @@
       }
     },
     {
+      "name": "Markup Italic",
+      "scope": "markup.italic",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markup Bold",
+      "scope": "markup.bold",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markup Bold/italic",
+      "scope": "markup.italic markup.bold | markup.bold markup.italic",
+      "settings": {
+        "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "JSON Default",
+      "scope": "source.json meta.structure.dictionary.json",
+      "settings": {
+        "foreground": "{{ colors.text.default }}"
+      }
+    },
+    {
+      "name": "JSON Invalid",
+      "scope": "source.json meta.structure.dictionary.json invalid.illegal.expected-dictionary-separator.json",
+      "settings": {
+        "foreground": "{{ colors.text.default }}"
+      }
+    },
+    {
       "name": "JSON - Level 0",
       "scope":
         "source.json meta.structure.dictionary.json string.quoted.double.json - meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json, source.json meta.structure.dictionary.json punctuation.definition.string - meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string",
