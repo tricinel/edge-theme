@@ -7,7 +7,7 @@
 - If you're a Sublime Text 3 user, please check out the [Sublime Text 3 specific repository](https://github.com/tricinel/edge-theme-sublime-text-3)
 - If you're a iTerm2 user, please check out the [iTerm2 specific repository](https://github.com/tricinel/edge-theme-iterm2)
 - If you're a Vim user, please check out the [Vim specific repository](https://github.com/tricinel/edge-theme-vim)
-- If you're a VSCode user, hold on a wee bit longer, I'm working on it.
+- If you're a VSCode user, please check out the [VSCode specific repository](https://github.com/tricinel/edge-theme-vscode)
 
 ## Local development
 
@@ -33,11 +33,13 @@
 │   └── iterm2
 │   └── sublimetext
 │   └── vim
+│   └── vscode
 ├── src
 │   ├── config
 │   │   └── iterm2
 │   │   └── sublimetext
 │   │   └── vim
+│   │   └── vscode
 │   ├── utils
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
