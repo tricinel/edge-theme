@@ -41,6 +41,40 @@
       }
     },
     {
+      "name": "Variable Instances",
+      "scope": [
+        "variable.instance",
+        "variable.other.instance",
+        "variable.readwrite.instance",
+        "variable.other.readwrite.instance",
+        "variable.other.property"
+      ],
+      "settings": {
+        "foreground": "{{ colors.scope.functionArg }}"
+      }
+    },
+    {
+      "name": "Variable Class",
+      "scope": [
+        "meta.property.class.js",
+        "variable.other.class.js",
+        "variable.other.object.js"
+      ],
+      "settings": {
+        "foreground": "{{ colors.scope.functionName }}"
+      }
+    },
+    {
+      "name": "Object property",
+      "scope": [
+        "meta.property.object.js",
+        "variable.other.property.js"
+      ],
+      "settings": {
+        "foreground": "{{ colors.scope.functionArg }}"
+      }
+    },
+    {
       "name": "Keyword",
       "scope": "keyword",
       "settings": {
@@ -59,6 +93,13 @@
       "scope": "storage.type",
       "settings": {
         "foreground": "{{ colors.scope.storage }}"
+      }
+    },
+    {
+      "name": "Support Class Component",
+      "scope": ["support.class.component.js", "support.class.component.tsx"],
+      "settings": {
+        "foreground": "{{ colors.scope.tagName }}"
       }
     },
     {
@@ -170,7 +211,7 @@
     },
     {
       "name": "CSS Unit",
-      "scope": "source.css meta.property-list.css meta.property-value.css keyword.other.unit.css",
+      "scope": ["source.css meta.property-list.css meta.property-value.css keyword.other.unit.css", "keyword.other.unit.px.css"],
       "settings": {
         "foreground": "{{ colors.scope.cssUnit }}"
       }
@@ -180,6 +221,13 @@
       "scope": "source.css meta.property-list.css meta.property-value.css support.constant.property-value.css",
       "settings": {
         "foreground": "{{ colors.scope.cssDefault }}"
+      }
+    },
+    {
+      "name": "CSS Tag Name",
+      "scope": "entity.name.tag.css",
+      "settings": {
+        "foreground": "{{ colors.scope.cssTagName }}"
       }
     },
     {
@@ -211,45 +259,62 @@
       }
     },
     {
-      "name": "SublimeLinter Warning",
-      "scope": "sublimelinter.mark.warning",
+      "name": "This keyword",
+      "scope": [
+        "variable.language.this.ts",
+        "variable.language.this.js",
+        "variable.language.this.php"
+      ],
       "settings": {
-        "foreground": "{{ colors.text.accents.orange }}"
+        "foreground": "{{ colors.scope.keyword }}"
       }
     },
     {
-      "name": "SublimeLinter Gutter Mark",
-      "scope": "sublimelinter.gutter-mark",
+      "name": "TypeScript Classes",
+      "scope": [
+        "meta.class entity.name.type.class.tsx",
+        "source.ts meta.class.ts entity.name.type.class.ts"
+      ],
       "settings": {
-        "foreground": "{{ colors.text.accents.white }}"
+        "foreground": "{{ colors.scope.className }}"
       }
     },
     {
-      "name": "SublimeLinter Error",
-      "scope": "sublimelinter.mark.error",
+      "name": "TypeScript Entity Name Type",
+      "scope": ["entity.name.type.tsx", "entity.name.type.module.tsx"],
       "settings": {
-        "foreground": "{{ colors.text.accents.red }}"
+        "foreground": "{{ colors.scope.constant }}"
       }
     },
     {
-      "name": "Bracket Highlighter Unmatched",
-      "scope": "brackethighlighter.unmatched",
+      "name": "TypeScript Method Declaration e.g. `constructor`",
+      "scope": [
+        "meta.method.declaration storage.type.ts",
+        "meta.method.declaration storage.type.tsx"
+      ],
       "settings": {
-        "foreground": "{{ colors.text.accents.red }}"
+        "foreground": "{{ colors.scope.constructor }}"
       }
     },
     {
-      "name": "Bracket Highlighter Quote",
-      "scope": "brackethighlighter.quote",
+      "name": "TypeScript[React] Punctuation Decorators",
+      "scope": "meta.tag.js meta.jsx.children.tsx",
       "settings": {
-        "foreground": "{{ colors.text.accents.green }}"
+        "foreground": "{{ colors.scope.punctuation }}"
       }
     },
     {
-      "name": "Bracket Highlighter Curly",
-      "scope": "brackethighlighter.default",
+      "name": "PHP Storage Modifier",
+      "scope": "storage.modifier.php",
       "settings": {
-        "foreground": "{{ colors.text.accents.indigo }}"
+        "foreground": "{{ colors.scope.storageType }}"
+      }
+    },
+    {
+      "name": "YAML Tag Name",
+      "scope": "entity.name.tag.yaml",
+      "settings": {
+        "foreground": "{{ colors.scope.tagName }}"
       }
     },
     {
@@ -318,6 +383,7 @@
       "name": "Markup Bold",
       "scope": "markup.bold",
       "settings": {
+        "foreground": "{{ colors.text.caret }}",
         "fontStyle": "bold"
       }
     },
@@ -326,6 +392,36 @@
       "scope": "markup.italic markup.bold | markup.bold markup.italic",
       "settings": {
         "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "Markdown Link Title and Description",
+      "scope": [
+        "string.other.link.title.markdown",
+        "string.other.link.description.markdown"
+      ],
+      "settings": {
+        "foreground": "{{ colors.text.accents.cyan }}"
+      }
+    },
+    {
+      "name": "Markdown Raw Code + others",
+      "scope": [
+        "markup.fenced_code.block.markdown",
+        "markup.inline.raw.string.markdown"
+      ],
+      "settings": {
+        "foreground": "{{ colors.text.accents.teal }}"
+      }
+    },
+    {
+      "name": "Markdown Links",
+      "scope": [
+        "markup.underline.link.markdown",
+        "markup.underline.link.image.markdown"
+      ],
+      "settings": {
+        "foreground": "{{ colors.text.accents.blue }}"
       }
     },
     {

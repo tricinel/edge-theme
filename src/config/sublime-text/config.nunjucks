@@ -34,6 +34,48 @@
   "scheme": [
     {% include "tmTheme.nunjucks" %}
     {
+      "name": "SublimeLinter Warning",
+      "scope": "sublimelinter.mark.warning",
+      "settings": {
+        "foreground": "{{ colors.text.accents.orange }}"
+      }
+    },
+    {
+      "name": "SublimeLinter Gutter Mark",
+      "scope": "sublimelinter.gutter-mark",
+      "settings": {
+        "foreground": "{{ colors.text.accents.white }}"
+      }
+    },
+    {
+      "name": "SublimeLinter Error",
+      "scope": "sublimelinter.mark.error",
+      "settings": {
+        "foreground": "{{ colors.text.accents.red }}"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Unmatched",
+      "scope": "brackethighlighter.unmatched",
+      "settings": {
+        "foreground": "{{ colors.text.accents.red }}"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Quote",
+      "scope": "brackethighlighter.quote",
+      "settings": {
+        "foreground": "{{ colors.text.accents.green }}"
+      }
+    },
+    {
+      "name": "Bracket Highlighter Curly",
+      "scope": "brackethighlighter.default",
+      "settings": {
+        "foreground": "{{ colors.text.accents.indigo }}"
+      }
+    },
+    {
       "name": "GitGutter Ignored",
       "scope": "markup.ignored.git_gutter",
       "settings": {

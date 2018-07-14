@@ -2,7 +2,7 @@
   "name": "edge",
   "displayName": "Edge Theme",
   "description": "A superb theme for your coding needs in {{ themes | length }} variants",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "bogdanlazar",
   "license": "MIT",
   "repository": {
@@ -27,7 +27,7 @@
   },
   "galleryBanner": {
     "color": "#081a20",
-    "theme": "light"
+    "theme": "dark"
   },
   "engines": {
     "vscode": "^1.17.0"
