@@ -17,9 +17,6 @@
     "dark theme",
     "light theme",
     "edge",
-    "night sky",
-    "ocean",
-    "serene",
     "accessible theme"
   ],
   "scripts": {
@@ -30,7 +27,7 @@
     "theme": "dark"
   },
   "engines": {
-    "vscode": "^1.17.0"
+    "vscode": "^1.21.0"
   },
   "categories": [
     "Themes"
