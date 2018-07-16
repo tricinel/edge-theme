@@ -9,6 +9,8 @@ export default {
     text: {
       default: '#52a6f0',
       caret: '#52a6f0',
+      link: '#f5d2ac',
+      linkHover: '#eb63b9',
       contrast: {
         light: '#679bbc',
         high: '#52a6f0'
