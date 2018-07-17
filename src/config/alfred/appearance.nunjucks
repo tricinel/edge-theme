@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 11,
+        "colorSelected" : "{{ toHex8(colors.text.contrast.high) }}",
+        "font" : "System Light",
+        "color" : "{{ toHex8(colors.text.contrast.light) }}"
+      },
+      "shortcut" : {
+        "size" : 12,
+        "colorSelected" : "{{ toHex8(colors.text.caret) }}",
+        "font" : "System Light",
+        "color" : "{{ toHex8(colors.text.accents.white) }}"
+      },
+      "backgroundSelected" : "{{ toHex8(colors.backgrounds.highlight) }}",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "{{ toHex8(colors.text.caret) }}",
+        "font" : "System Light",
+        "color" : "{{ toHex8(colors.text.accents.white) }}"
+      },
+      "iconPaddingHorizontal" : 4,
+      "paddingVertical" : 8,
+      "iconSize" : 24
+    },
+    "search" : {
+      "paddingVertical" : 0,
+      "background" : "{{ toHex8(colors.backgrounds.highlight) }}",
+      "spacing" : 8,
+      "text" : {
+        "size" : 24,
+        "colorSelected" : "{{ toHex8(colors.backgrounds.selection) }}",
+        "font" : "System Light",
+        "color" : "{{ toHex8(colors.text.caret) }}"
+      },
+      "backgroundSelected" : "{{ toHex8(colors.text.caret) }}"
+    },
+    "window" : {
+      "color" : "{{ toHex8(colors.backgrounds.background) }}",
+      "paddingHorizontal" : 0,
+      "width" : 640,
+      "borderPadding" : 0,
+      "borderColor" : "{{ toHex8(colors.backgrounds.background) }}",
+      "blur" : 16,
+      "roundness" : 2,
+      "paddingVertical" : 8
+    },
+    "credit" : "Bogdan Lazar",
+    "separator" : {
+      "color" : "{{ toHex8(colors.backgrounds.background) }}",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "{{ toHex8(colors.backgrounds.foreground) }}",
+      "thickness" : 2
+    },
+    "name" : "{{ name }}"
+  }
+}

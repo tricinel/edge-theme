@@ -8,6 +8,7 @@
 - If you're a iTerm2 user, please check out the [iTerm2 specific repository](https://github.com/tricinel/edge-theme-iterm2)
 - If you're a Vim user, please check out the [Vim specific repository](https://github.com/tricinel/edge-theme-vim)
 - If you're a VSCode user, please check out the [VSCode specific repository](https://github.com/tricinel/edge-theme-vscode)
+- If you're a Alfred user, please check out the [Alfred specific repository](https://github.com/tricinel/edge-theme-alfred)
 
 ## Local development
 
@@ -30,12 +31,14 @@
 ├── gulp
 ├── icons
 ├── dist
+│   └── alfred
 │   └── iterm2
 │   └── sublimetext
 │   └── vim
 │   └── vscode
 ├── src
 │   ├── config
+│   │   └── alfred
 │   │   └── iterm2
 │   │   └── sublimetext
 │   │   └── vim

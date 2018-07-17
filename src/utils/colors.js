@@ -31,6 +31,11 @@ const toRgba = (hex, alpha) => append(alpha, toRgb(hex));
 
 const toHex = color => toColor(color).toHexString();
 
+const toHex8 = (hex, alpha = 1) =>
+  toColor(hex)
+    .setAlpha(alpha)
+    .toHex8String();
+
 const darken = (hex, amount = 20) => toRgb(toColor(hex).darken(amount));
 
 const lighten = (hex, amount = 20) => toRgb(toColor(hex).lighten(amount));
@@ -75,6 +80,7 @@ export {
   toRgb,
   toRgba,
   toHex,
+  toHex8,
   hover,
   darken,
   lighten,
