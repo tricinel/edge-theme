@@ -260,6 +260,13 @@
       }
     },
     {
+      "name": "Invalid Illegal",
+      "scope": "invalid.illegal",
+      "settings": {
+        "foreground": "{{ colors.backgrounds.foreground }}"
+      }
+    },
+    {
       "name": "normalize font style of certain components",
       "scope": [
         "meta.property-list.css meta.property-value.css variable.other.less",
