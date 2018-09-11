@@ -19,7 +19,7 @@
     "button.foreground": "{{ colors.backgrounds.background }}",
     "button.hoverBackground": "{{ colors.text.contrast.light }}",
     "dropdown.background": "{{ colors.backgrounds.highlight }}",
-    "dropdown.listBackground": "{{ colors.backgrounds.foreground }}",
+    "dropdown.listBackground": "{{ colors.backgrounds.background }}",
     "dropdown.border": "{{ colors.backgrounds.highlight }}",
     "dropdown.foreground": "{{ colors.text.default }}",
     "input.background": "{{ colors.backgrounds.selection }}",
