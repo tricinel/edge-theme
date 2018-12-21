@@ -17,8 +17,8 @@ if has("gui_running")
   hi LineNr guifg={{ scheme.highlight }}
   hi Directory guifg={{ scheme.foreground }} gui=bold
   hi Search guifg={{ scheme.foreground }} guibg={{ scheme.selection }} gui=NONE
-  hi Pmenu guifg={{ ui.colors.textColor }} guibg={{ ui.colors.highlight }} gui=NONE
-  hi PmenuSel guifg={{ ui.colors.textColor }} guibg={{ ui.colors.textHighlightColor }} gui=NONE
+  hi Pmenu guifg={{ colors.backgrounds.foreground }} guibg={{ colors.backgrounds.background }} gui=NONE
+  hi PmenuSel guifg={{ colors.backgrounds.background }} guibg={{ colors.backgrounds.highlight }} gui=NONE
   hi PMenuSbar guibg={{ scheme.foreground }} gui=NONE
   hi PMenuThumb guibg={{ scheme.background }} gui=NONE
 
@@ -32,8 +32,8 @@ else
   hi LineNr ctermfg={{ transformToColorCode(scheme.highlight) }}
   hi Directory ctermfg={{ transformToColorCode(scheme.foreground) }} cterm=bold
   hi Search ctermfg={{ transformToColorCode(scheme.foreground) }} ctermbg={{ transformToColorCode(scheme.selection) }} cterm=NONE
-  hi Pmenu ctermfg={{ transformToColorCode(ui.colors.textColor) }} ctermbg={{ transformToColorCode(ui.colors.highlight) }} cterm=NONE
-  hi PmenuSel ctermfg={{ transformToColorCode(ui.colors.textColor) }} ctermbg={{ transformToColorCode(ui.colors.textHighlightColor) }} cterm=NONE
+  hi Pmenu ctermfg={{ transformToColorCode(colors.backgrounds.foreground) }} ctermbg={{ transformToColorCode(colors.backgrounds.background) }} cterm=NONE
+  hi PmenuSel ctermfg={{ transformToColorCode(colors.backgrounds.background) }} ctermbg={{ transformToColorCode(colors.backgrounds.highlight) }} cterm=NONE
   hi PMenuSbar ctermbg={{ transformToColorCode(scheme.foreground) }} cterm=NONE
   hi PMenuThumb ctermbg={{ transformToColorCode(scheme.background) }} cterm=NONE
 

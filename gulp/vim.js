@@ -38,7 +38,7 @@ gulp.task('create:vim', () => {
             basename: transformFileName(settings[theme].name),
             src: `${editorPath}/scheme.nunjucks`,
             dest: `${paths.dist}/vim`,
-            extraData: { transformFileName }
+            extraData: { transformFileName, ...colors[theme] }
           })
         )
       );
