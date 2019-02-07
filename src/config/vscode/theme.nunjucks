@@ -50,7 +50,7 @@
     "list.hoverForeground": "{{ colors.text.caret }}",
     "list.inactiveSelectionBackground": "{{ colors.backgrounds.background }}",
     "list.inactiveSelectionForeground": "{{ colors.text.caret }}",
-    "list.inactiveFocusBackground": "{{ colors.text.default }}",
+    "list.inactiveFocusBackground": "{{ colors.backgrounds.highlight }}",
     "list.invalidItemForeground": "{{ colors.text.accents.indigo }}",
     "list.errorForeground": "{{ colors.text.accents.red }}",
     "list.warningForeground": "{{ colors.text.accents.orange }}",
