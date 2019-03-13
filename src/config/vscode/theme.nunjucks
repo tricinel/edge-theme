@@ -221,6 +221,22 @@
   "tokenColors": [
     {% include "tmTheme.nunjucks" %}
     {
+      "name": "Invalid",
+      "scope": "invalid",
+      "settings": {
+        "foreground": "{{ colors.text.accents.red }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Invalid deprecated",
+      "scope": "invalid.deprecated",
+      "settings":{
+        "foreground": "{{ colors.text.accents.indigo }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "Changed",
       "scope": [
         "markup.changed",
