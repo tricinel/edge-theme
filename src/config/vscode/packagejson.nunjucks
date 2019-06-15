@@ -2,7 +2,7 @@
   "name": "edge",
   "displayName": "Edge Theme",
   "description": "A superb theme for your coding needs in {{ themes | length }} variants",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "publisher": "bogdanlazar",
   "license": "MIT",
   "repository": {

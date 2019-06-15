@@ -209,7 +209,7 @@
     "terminal.selectionBackground": "{{ colors.backgrounds.selection }}",
     "terminalCursor.background": "{{ colors.text.caret }}",
     "terminalCursor.foreground": "{{ colors.backgrounds.background }}",
-    "debugToolBar.background": "{{ colors.text.caret }}",
+    "debugToolBar.background": "{{ colors.tabs.active.background }}",
     "debugToolBar.border": "{{ colors.borders.color }}",
     "gitDecoration.modifiedResourceForeground": "{{ colors.text.accents.amber }}",
     "gitDecoration.deletedResourceForeground": "{{ colors.backgrounds.foreground }}",
