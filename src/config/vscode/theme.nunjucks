@@ -206,7 +206,7 @@
     "terminal.ansiRed": "{{ colors.text.accents.red }}",
     "terminal.ansiWhite": "{{ colors.text.accents.white }}",
     "terminal.ansiYellow": "{{ colors.text.accents.yellow }}",
-    "terminal.selectionBackground": "{{ colors.backgrounds.selection }}",
+    "terminal.selectionBackground": "{{ toHex8(colors.backgrounds.selection, 0.3) }}",
     "terminalCursor.background": "{{ colors.text.caret }}",
     "terminalCursor.foreground": "{{ colors.backgrounds.background }}",
     "debugToolBar.background": "{{ colors.tabs.active.background }}",
