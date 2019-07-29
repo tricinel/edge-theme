@@ -9,7 +9,21 @@
       "name": "String",
       "scope": "string",
       "settings": {
+        "foreground": "{{ colors.scope.jsProp }}"
+      }
+    },
+    {
+      "name": "String Quoted",
+      "scope": ["string.quoted", "variable.other.readwrite.js"],
+      "settings": {
         "foreground": "{{ colors.scope.string }}"
+      }
+    },
+    {
+      "name": "JS Constant/Variable name",
+      "scope": "variable.other.readwrite.js",
+      "settings": {
+        "foreground": "{{ colors.scope.userVar }}"
       }
     },
     {

@@ -1,6 +1,7 @@
 {
   "name": "{{ name }}",
   "type": "{{ backgroundType }}",
+  "author": "Bogdan Lazar",
   "colors": {
     "background": "{{ colors.backgrounds.background }}",
     "foreground": "{{ colors.backgrounds.foreground }}",
