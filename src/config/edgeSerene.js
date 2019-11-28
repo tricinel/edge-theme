@@ -4,7 +4,9 @@ export default {
       background: '#fdf6e3',
       foreground: '#633f24',
       highlight: '#eae1cb',
-      selection: '#ddc990'
+      selection: '#ddc990',
+      dark: '#f2e7c9',
+      darker: '#f2e7c9'
     },
     text: {
       default: '#633f24',

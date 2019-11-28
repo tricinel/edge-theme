@@ -22,6 +22,8 @@
       "textColor": "{{ colors.text.default }}",
       "borderColor": "{{ colors.borders.color }}",
       "textHighlightColor": "{{ colors.text.caret }}",
+      "backgroundDark": "{{ colors.backgrounds.dark }}",
+      "backgroundDarker": "{{ colors.backgrounds.darker }}",
       "tabs": {
         "background": "{{ colors.tabs.background }}",
         "tab": "{{ colors.tabs.default.background }}",
