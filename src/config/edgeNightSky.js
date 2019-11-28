@@ -5,8 +5,8 @@ export default {
       foreground: '#a9bcd0',
       highlight: '#172a3a',
       selection: '#172a3a',
-      dark: '#06151a',
-      darker: '#051419'
+      dark: '#07161b',
+      darker: '#061419'
     },
     text: {
       default: '#a9bcd0',
