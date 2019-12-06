@@ -93,3 +93,19 @@ There's no workflow you can apply to make modifications on the color schemes and
 12. Click on **Import**
 13. Select the `.itermcolors` files of the schemes from `<path-to-edge-theme-repo>/dist/iterm2`
 14. Click on **Color Presets** and choose a color scheme that you previously imported.
+
+#### Slack
+
+With Slack, you can customize the sidebar theme by pasting the following color codes in your *Sidebar Theme* section under Slack's *Preferences*:
+
+**Edge Night Sky**
+
+`#07161B,#A9BCD0,#172A3A,#F3D3BD,#061419,#A9BCD0,#5DD39E,#FB3640`
+
+**Edge Serene**
+
+`#F6EED8,#EAE1CB,#DDC990,#633F24,#097C8E,#633F24,#2E7820,#C41922`
+
+**Edge Ocean**
+
+`#001230,#0C2A59,#0C2A59,#F5D2AC,#F5D2AC,#52A6F0,#40C7BC,#E7616F`
