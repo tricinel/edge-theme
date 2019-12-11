@@ -100,7 +100,7 @@ With Slack, you can customize the sidebar theme by pasting the following color c
 
 **Edge Night Sky**
 
-`#07161B,#A9BCD0,#172A3A,#F3D3BD,#061419,#A9BCD0,#5DD39E,#FB3640`
+`#07161B,#172A3A,#172A3A,#F3D3BD,#061419,#A9BCD0,#5DD39E,#FB3640`
 
 **Edge Serene**
 
