@@ -17,6 +17,14 @@ export default {
         light: '#679bbc',
         high: '#52a6f0'
       },
+      selection: {
+        background: '#0d3d45',
+        border: '#ddc990',
+        match: {
+          background: '#493b2c',
+          border: '#8a87c3'
+        }
+      },
       accents: {
         amber: '#f5d2ac',
         blue: '#00abe7',

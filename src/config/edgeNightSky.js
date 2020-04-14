@@ -4,7 +4,7 @@ export default {
       background: '#081a20',
       foreground: '#a9bcd0',
       highlight: '#172a3a',
-      selection: '#172a3a',
+      selection: '#020e13',
       dark: '#07161b',
       darker: '#061419'
     },
@@ -16,6 +16,14 @@ export default {
       contrast: {
         light: '#358aa9',
         high: '#a9bcd0'
+      },
+      selection: {
+        background: '#172a3a',
+        border: '#358aa9',
+        match: {
+          background: '#1f5569',
+          border: '#f3d3bd'
+        }
       },
       accents: {
         amber: '#ffe082',
