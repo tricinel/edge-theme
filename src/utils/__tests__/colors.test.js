@@ -18,8 +18,8 @@ test('Get the RGB values of a Hex color and set its alpha', () => {
 });
 
 test('Darken a color', () => {
-  expect(darken(color)).toEqual([181, 60, 2]);
-  expect(darken(color, 50)).toEqual([30, 10, 0]);
+  expect(toRgb(darken(color)).toEqual([181, 60, 2]);
+  expect(toRgb(darken(color, 50)).toEqual([30, 10, 0]);
 });
 
 test('Split a color into RGB components for iterm2', () => {

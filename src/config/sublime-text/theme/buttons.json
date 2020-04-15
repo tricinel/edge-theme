@@ -4,7 +4,7 @@
 {
  "class": "label_control",
  "parents": [{"class": "button_control"}],
- "color": [{{ toRgb(ui.colors.textColor) }}],
+ "color": [{{ toRgb(ui.colors.textColor) }}]
 },
 {
  "class": "label_control",
@@ -15,14 +15,14 @@
 {
  "class": "label_control",
  "parents": [{"class": "button_control", "attributes": ["hover"]}],
- "color": [{{ hover(ui.colors.highlight) }}]
+ "color": [{{ toRgb(hover(ui.colors.highlight)) }}]
 },
 {
   "class": "button_control",
   "content_margin": [3, 12, 3, 12],
   "min_size": [80, 0],
   "layer1.tint": [{{ toRgb(ui.colors.background) }}],
-  "layer2.tint": [{{ lighten(ui.colors.highlight) }}],
+  "layer2.tint": [{{ toRgb(lighten(ui.colors.highlight)) }}],
   "layer0.opacity": 0.0,
   "layer0.inner_margin": [3, 3],
   "layer1.opacity": 1.0,

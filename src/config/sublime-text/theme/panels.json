@@ -47,7 +47,7 @@
   "fg": [{{ toRgb(ui.colors.foreground) }}],
   "match_fg": [{{ toRgb(ui.colors.textHighlightColor) }}],
   "selected_fg": [{{ toRgb(ui.colors.highlight) }}],
-  "selected_match_fg": [{{ darken(ui.settings.highlight) }}]
+  "selected_match_fg": [{{ toRgb(darken(ui.settings.highlight)) }}]
 },
 {
   "class": "table_row",

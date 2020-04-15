@@ -36,9 +36,8 @@ const toHex8 = (hex, alpha = 1) =>
     .setAlpha(alpha)
     .toHex8String();
 
-const darken = (hex, amount = 20) => toRgb(toColor(hex).darken(amount));
-
-const lighten = (hex, amount = 20) => toRgb(toColor(hex).lighten(amount));
+const darken = (hex, amount = 20) => toColor(hex).darken(amount);
+const lighten = (hex, amount = 20) => toColor(hex).lighten(amount);
 
 const hover = hex => darken(hex);
 
