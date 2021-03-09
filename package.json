@@ -37,6 +37,6 @@
     "tinycolor2": "^1.4.1",
     "x256": "^0.0.2",
     "yargs": "^9.0.1",
-    "yargs-parser": "^8.0.0"
+    "yargs-parser": "^13.1.2"
   }
 }
