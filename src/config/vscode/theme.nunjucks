@@ -6,7 +6,7 @@
     "background": "{{ colors.backgrounds.background }}",
     "foreground": "{{ colors.backgrounds.foreground }}",
     "widget.shadow": "{{ colors.backgrounds.highlight }}",
-    "selection.background": "{{ colors.backgrounds.selection }}",
+    "selection.background": "{{ colors.backgrounds.highlight }}",
     "descriptionForeground": "{{ colors.text.default }}",
     "errorForeground": "{{ colors.text.accents.red }}",
     "textBlockQuote.background": "{{ colors.backgrounds.background }}",
@@ -220,7 +220,8 @@
     "gitDecoration.untrackedResourceForeground": "{{ colors.text.accents.cyan }}",
     "gitDecoration.ignoredResourceForeground": "{{ colors.backgrounds.foreground }}",
     "gitDecoration.conflictingResourceForeground": "{{ colors.backgrounds.foreground }}",
-    "gitDecoration.submoduleResourceForeground": "{{ colors.backgrounds.foreground }}"
+    "gitDecoration.submoduleResourceForeground": "{{ colors.backgrounds.foreground }}",
+    "gitlens.trailingLineForegroundColor": "{{ colors.extensions.gitlens.trailingLineForegroundColor }}"
   },
   "tokenColors": [
     {% include "tmTheme.nunjucks" %}
