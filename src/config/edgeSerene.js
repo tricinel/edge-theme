@@ -59,7 +59,7 @@ export default {
       focus: "#707c7c"
     },
     scope: {
-      comment: "#bada55",
+      comment: "#717171",
       string: "#4b70b8",
       number: "#8745ff",
       constant: "#ad5c00",
